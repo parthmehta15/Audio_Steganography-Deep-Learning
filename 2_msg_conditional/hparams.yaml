@@ -1,0 +1,7 @@
+{add_carrier_noise: null, add_stft_noise: 0, adv: false, batch_size: 32, block_type: normal,
+  carrier_detach: -1, carrier_noise_norm: 0.0, dataset: timit, dec_c_n_layers: 4,
+  enc_n_layers: 3, lambda_carrier_loss: 3.0, lambda_msg_loss: 1.0, load_ckpt: null,
+  loss_type: mse, lr: 0.001, mode: train, model_type: n_msg_cond, n_messages: 2, n_pairs: 3000,
+  num_iters: 65, num_workers: 20, opt: adam, run_dir: /content/drive/MyDrive/DL-dataset/FINAL_codes,
+  sample_every: null, save_model_every: 5, test_path: /content/cover1/gcp_final/datasets/Test,
+  train_path: /content/cover1/gcp_final/datasets/Train, val_path: /content/cover1/gcp_final/datasets/Val}

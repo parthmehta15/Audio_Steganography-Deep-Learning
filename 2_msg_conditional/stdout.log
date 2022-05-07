@@ -1,0 +1,862 @@
+2022-05-02 01:07:41.952 | DEBUG    | solver_n_msg_conditional:__init__:48 - DataParallel(
+  (module): Encoder(
+    (main): Sequential(
+      (0): GatedBlock(
+        (conv): Conv2d(4, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(4, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+)
+2022-05-02 01:07:41.952 | DEBUG    | solver_n_msg_conditional:__init__:49 - DataParallel(
+  (module): CarrierDecoder(
+    (main): Sequential(
+      (0): GatedBlock(
+        (conv): Conv2d(74, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(74, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (3): GatedBlock(
+        (conv): Conv2d(64, 2, kernel_size=(1, 1), stride=(1, 1))
+        (gate): Conv2d(64, 2, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+  )
+)
+2022-05-02 01:07:41.953 | DEBUG    | solver_n_msg_conditional:__init__:50 - DataParallel(
+  (module): MsgDecoder(
+    (main): Sequential(
+      (0): GatedBlock(
+        (conv): Conv2d(4, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(4, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (3): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (4): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (5): GatedBlock(
+        (conv): Conv2d(64, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+)
+2022-05-02 01:07:41.953 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:07:41.953 | INFO     | solver:train:191 - start training...
+2022-05-02 01:07:41.955 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:09:06.902 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:09:06.903 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 1_epoch
+2022-05-02 01:09:06.921 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:09:06.922 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:09:06.922 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:09:38.102 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:09:38.102 | INFO     | solver:test:318 - carrier loss: 0.00017524480517749907
+2022-05-02 01:09:38.102 | INFO     | solver:test:319 - carrier SnR: 21.42974853515625
+2022-05-02 01:09:38.103 | INFO     | solver:test:320 - message loss: 0.02243173960596323
+2022-05-02 01:09:38.103 | INFO     | solver:test:321 - message SnR: -8.759256161283702e-05
+2022-05-02 01:09:38.107 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:11:01.815 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:11:01.816 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 2_epoch
+2022-05-02 01:11:01.828 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:11:01.829 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:11:01.829 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:11:32.452 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:11:32.452 | INFO     | solver:test:318 - carrier loss: 5.941585550317541e-05
+2022-05-02 01:11:32.452 | INFO     | solver:test:319 - carrier SnR: 26.1522274017334
+2022-05-02 01:11:32.453 | INFO     | solver:test:320 - message loss: 0.02243137755431235
+2022-05-02 01:11:32.453 | INFO     | solver:test:321 - message SnR: -1.580677053425461e-05
+2022-05-02 01:11:32.458 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:12:55.390 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:12:55.391 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 3_epoch
+2022-05-02 01:12:55.403 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:12:55.404 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:12:55.404 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:13:26.142 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:13:26.142 | INFO     | solver:test:318 - carrier loss: 4.2755230310831394e-05
+2022-05-02 01:13:26.142 | INFO     | solver:test:319 - carrier SnR: 27.5601863861084
+2022-05-02 01:13:26.143 | INFO     | solver:test:320 - message loss: 0.022431298391893506
+2022-05-02 01:13:26.143 | INFO     | solver:test:321 - message SnR: 2.9089324016240425e-07
+2022-05-02 01:13:26.148 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:14:49.564 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:14:49.565 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 4_epoch
+2022-05-02 01:14:49.577 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:14:49.578 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:14:49.578 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:15:20.840 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:15:20.840 | INFO     | solver:test:318 - carrier loss: 3.888361607096158e-05
+2022-05-02 01:15:20.841 | INFO     | solver:test:319 - carrier SnR: 27.944440841674805
+2022-05-02 01:15:20.841 | INFO     | solver:test:320 - message loss: 0.02243137895129621
+2022-05-02 01:15:20.841 | INFO     | solver:test:321 - message SnR: -1.634120781091042e-05
+2022-05-02 01:15:20.845 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:16:44.266 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:16:44.267 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 5_epoch
+2022-05-02 01:16:44.280 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:16:44.280 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:16:44.280 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:17:14.614 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:17:14.615 | INFO     | solver:test:318 - carrier loss: 4.665316100727068e-05
+2022-05-02 01:17:14.615 | INFO     | solver:test:319 - carrier SnR: 27.070228576660156
+2022-05-02 01:17:14.615 | INFO     | solver:test:320 - message loss: 0.022431284189224243
+2022-05-02 01:17:14.616 | INFO     | solver:test:321 - message SnR: 3.882183591485955e-06
+2022-05-02 01:17:14.620 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:18:37.474 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:18:37.475 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 6_epoch
+2022-05-02 01:18:37.487 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:18:37.488 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:18:37.488 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:19:08.638 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:19:08.638 | INFO     | solver:test:318 - carrier loss: 2.511475724986667e-05
+2022-05-02 01:19:08.639 | INFO     | solver:test:319 - carrier SnR: 29.84972381591797
+2022-05-02 01:19:08.639 | INFO     | solver:test:320 - message loss: 0.022431333432905376
+2022-05-02 01:19:08.639 | INFO     | solver:test:321 - message SnR: -6.89318176227971e-06
+2022-05-02 01:19:08.644 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:20:32.080 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:20:32.081 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 7_epoch
+2022-05-02 01:20:32.093 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:20:32.094 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:20:32.094 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:21:03.267 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:21:03.268 | INFO     | solver:test:318 - carrier loss: 2.284358726001301e-05
+2022-05-02 01:21:03.268 | INFO     | solver:test:319 - carrier SnR: 30.252544403076172
+2022-05-02 01:21:03.268 | INFO     | solver:test:320 - message loss: 0.022431517485529184
+2022-05-02 01:21:03.269 | INFO     | solver:test:321 - message SnR: -4.138700751354918e-05
+2022-05-02 01:21:03.273 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:22:25.795 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:22:25.796 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 8_epoch
+2022-05-02 01:22:25.809 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:22:25.809 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:22:25.809 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:22:56.854 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:22:56.854 | INFO     | solver:test:318 - carrier loss: 2.1328972195533424e-05
+2022-05-02 01:22:56.855 | INFO     | solver:test:319 - carrier SnR: 30.558223724365234
+2022-05-02 01:22:56.855 | INFO     | solver:test:320 - message loss: 0.02243163820821792
+2022-05-02 01:22:56.855 | INFO     | solver:test:321 - message SnR: -6.449042120948434e-05
+2022-05-02 01:22:56.860 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:24:20.143 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:24:20.145 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 9_epoch
+2022-05-02 01:24:20.157 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:24:20.157 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:24:20.157 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:24:51.668 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:24:51.669 | INFO     | solver:test:318 - carrier loss: 2.1748154551914922e-05
+2022-05-02 01:24:51.669 | INFO     | solver:test:319 - carrier SnR: 30.46710205078125
+2022-05-02 01:24:51.669 | INFO     | solver:test:320 - message loss: 0.022431365097872913
+2022-05-02 01:24:51.669 | INFO     | solver:test:321 - message SnR: -1.2879057976533659e-05
+2022-05-02 01:24:51.675 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:26:15.184 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:26:15.185 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 10_epoch
+2022-05-02 01:26:15.197 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:26:15.198 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:26:15.198 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:26:45.751 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:26:45.752 | INFO     | solver:test:318 - carrier loss: 1.866602667632833e-05
+2022-05-02 01:26:45.752 | INFO     | solver:test:319 - carrier SnR: 31.10720443725586
+2022-05-02 01:26:45.752 | INFO     | solver:test:320 - message loss: 0.02243146684486419
+2022-05-02 01:26:45.753 | INFO     | solver:test:321 - message SnR: -3.3361982787027955e-05
+2022-05-02 01:26:45.757 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:28:09.324 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:28:09.325 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 11_epoch
+2022-05-02 01:28:09.337 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:28:09.337 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:28:09.338 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:28:40.794 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:28:40.795 | INFO     | solver:test:318 - carrier loss: 1.6661458289490838e-05
+2022-05-02 01:28:40.795 | INFO     | solver:test:319 - carrier SnR: 31.60123062133789
+2022-05-02 01:28:40.795 | INFO     | solver:test:320 - message loss: 0.022431886522099376
+2022-05-02 01:28:40.796 | INFO     | solver:test:321 - message SnR: -0.00011503461428219453
+2022-05-02 01:28:40.800 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:30:03.890 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:30:03.891 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 12_epoch
+2022-05-02 01:30:03.903 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:30:03.904 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:30:03.904 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:30:35.060 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:30:35.061 | INFO     | solver:test:318 - carrier loss: 2.8238924073775706e-05
+2022-05-02 01:30:35.061 | INFO     | solver:test:319 - carrier SnR: 29.224214553833008
+2022-05-02 01:30:35.061 | INFO     | solver:test:320 - message loss: 0.022432137397117913
+2022-05-02 01:30:35.062 | INFO     | solver:test:321 - message SnR: -0.00016472152492497116
+2022-05-02 01:30:35.066 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:31:58.103 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:31:58.104 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 13_epoch
+2022-05-02 01:31:58.117 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:31:58.117 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:31:58.117 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:32:29.652 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:32:29.652 | INFO     | solver:test:318 - carrier loss: 1.6356187870769645e-05
+2022-05-02 01:32:29.653 | INFO     | solver:test:319 - carrier SnR: 31.717220306396484
+2022-05-02 01:32:29.653 | INFO     | solver:test:320 - message loss: 0.022432534955441952
+2022-05-02 01:32:29.653 | INFO     | solver:test:321 - message SnR: -0.000244440307142213
+2022-05-02 01:32:29.658 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:33:53.320 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:33:53.321 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 14_epoch
+2022-05-02 01:33:53.334 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:33:53.335 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:33:53.335 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:34:24.085 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:34:24.085 | INFO     | solver:test:318 - carrier loss: 1.3369408804919658e-05
+2022-05-02 01:34:24.085 | INFO     | solver:test:319 - carrier SnR: 32.578208923339844
+2022-05-02 01:34:24.086 | INFO     | solver:test:320 - message loss: 0.02243258326780051
+2022-05-02 01:34:24.086 | INFO     | solver:test:321 - message SnR: -0.0002557992411311716
+2022-05-02 01:34:24.091 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:35:46.109 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:35:46.111 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 15_epoch
+2022-05-02 01:35:46.123 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:35:46.124 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:35:46.124 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:36:17.214 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:36:17.215 | INFO     | solver:test:318 - carrier loss: 2.5479108899162384e-05
+2022-05-02 01:36:17.215 | INFO     | solver:test:319 - carrier SnR: 29.6649169921875
+2022-05-02 01:36:17.215 | INFO     | solver:test:320 - message loss: 0.02243303507566452
+2022-05-02 01:36:17.216 | INFO     | solver:test:321 - message SnR: -0.00034678546944633126
+2022-05-02 01:36:17.221 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:37:40.662 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:37:40.663 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 16_epoch
+2022-05-02 01:37:40.676 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:37:40.676 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:37:40.676 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:38:11.907 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:38:11.908 | INFO     | solver:test:318 - carrier loss: 1.1776608062064042e-05
+2022-05-02 01:38:11.908 | INFO     | solver:test:319 - carrier SnR: 33.094825744628906
+2022-05-02 01:38:11.908 | INFO     | solver:test:320 - message loss: 0.02243258210364729
+2022-05-02 01:38:11.908 | INFO     | solver:test:321 - message SnR: -0.00025243396521545947
+2022-05-02 01:38:11.913 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:39:35.479 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:39:35.480 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 17_epoch
+2022-05-02 01:39:35.492 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:39:35.493 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:39:35.493 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:40:06.925 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:40:06.926 | INFO     | solver:test:318 - carrier loss: 2.4778161900940177e-05
+2022-05-02 01:40:06.926 | INFO     | solver:test:319 - carrier SnR: 29.770004272460938
+2022-05-02 01:40:06.926 | INFO     | solver:test:320 - message loss: 0.022432697005569935
+2022-05-02 01:40:06.927 | INFO     | solver:test:321 - message SnR: -0.0002810576988849789
+2022-05-02 01:40:06.932 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:41:30.182 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:41:30.183 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 18_epoch
+2022-05-02 01:41:30.196 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:41:30.196 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:41:30.197 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:42:01.975 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:42:01.975 | INFO     | solver:test:318 - carrier loss: 1.1751667784665187e-05
+2022-05-02 01:42:01.976 | INFO     | solver:test:319 - carrier SnR: 33.11695098876953
+2022-05-02 01:42:01.976 | INFO     | solver:test:320 - message loss: 0.02243228501174599
+2022-05-02 01:42:01.977 | INFO     | solver:test:321 - message SnR: -0.00019439698371570557
+2022-05-02 01:42:01.981 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:43:25.262 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:43:25.263 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 19_epoch
+2022-05-02 01:43:25.276 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:43:25.276 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:43:25.276 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:43:56.467 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:43:56.467 | INFO     | solver:test:318 - carrier loss: 9.126799113801098e-06
+2022-05-02 01:43:56.468 | INFO     | solver:test:319 - carrier SnR: 34.207061767578125
+2022-05-02 01:43:56.468 | INFO     | solver:test:320 - message loss: 0.022432712488807738
+2022-05-02 01:43:56.468 | INFO     | solver:test:321 - message SnR: -0.00027545489137992263
+2022-05-02 01:43:56.473 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:45:19.815 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:45:19.816 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 20_epoch
+2022-05-02 01:45:19.828 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:45:19.829 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:45:19.829 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:45:51.116 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:45:51.117 | INFO     | solver:test:318 - carrier loss: 9.196932751365239e-06
+2022-05-02 01:45:51.117 | INFO     | solver:test:319 - carrier SnR: 34.17974090576172
+2022-05-02 01:45:51.117 | INFO     | solver:test:320 - message loss: 0.022433568607084453
+2022-05-02 01:45:51.118 | INFO     | solver:test:321 - message SnR: -0.00045154770486988127
+2022-05-02 01:45:51.122 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:47:13.821 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:47:13.822 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 21_epoch
+2022-05-02 01:47:13.836 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:47:13.837 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:47:13.837 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:47:45.507 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:47:45.507 | INFO     | solver:test:318 - carrier loss: 8.141513518467036e-06
+2022-05-02 01:47:45.507 | INFO     | solver:test:319 - carrier SnR: 34.706851959228516
+2022-05-02 01:47:45.508 | INFO     | solver:test:320 - message loss: 0.022441265056841075
+2022-05-02 01:47:45.508 | INFO     | solver:test:321 - message SnR: -0.00200653076171875
+2022-05-02 01:47:45.513 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:49:08.204 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:49:08.205 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 22_epoch
+2022-05-02 01:49:08.218 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:49:08.219 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:49:08.219 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:49:39.332 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:49:39.332 | INFO     | solver:test:318 - carrier loss: 7.843458803336034e-06
+2022-05-02 01:49:39.333 | INFO     | solver:test:319 - carrier SnR: 34.87065124511719
+2022-05-02 01:49:39.333 | INFO     | solver:test:320 - message loss: 0.022434387705288827
+2022-05-02 01:49:39.333 | INFO     | solver:test:321 - message SnR: -0.000603577122092247
+2022-05-02 01:49:39.338 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:51:03.025 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:51:03.026 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 23_epoch
+2022-05-02 01:51:03.039 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:51:03.040 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:51:03.040 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:51:34.336 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:51:34.337 | INFO     | solver:test:318 - carrier loss: 7.2680627170029766e-06
+2022-05-02 01:51:34.337 | INFO     | solver:test:319 - carrier SnR: 35.21049880981445
+2022-05-02 01:51:34.337 | INFO     | solver:test:320 - message loss: 0.022440770757384598
+2022-05-02 01:51:34.338 | INFO     | solver:test:321 - message SnR: -0.001963798888027668
+2022-05-02 01:51:34.343 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:52:57.159 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:52:57.160 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 24_epoch
+2022-05-02 01:52:57.173 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:52:57.173 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:52:57.173 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:53:28.200 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:53:28.200 | INFO     | solver:test:318 - carrier loss: 7.265459117888895e-06
+2022-05-02 01:53:28.200 | INFO     | solver:test:319 - carrier SnR: 35.215736389160156
+2022-05-02 01:53:28.201 | INFO     | solver:test:320 - message loss: 0.022435856983065605
+2022-05-02 01:53:28.201 | INFO     | solver:test:321 - message SnR: -0.0008981305873021483
+2022-05-02 01:53:28.206 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:54:51.349 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:54:51.350 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 25_epoch
+2022-05-02 01:54:51.362 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:54:51.363 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:54:51.363 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:55:22.974 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:55:22.974 | INFO     | solver:test:318 - carrier loss: 6.825034915891592e-06
+2022-05-02 01:55:22.974 | INFO     | solver:test:319 - carrier SnR: 35.48078918457031
+2022-05-02 01:55:22.975 | INFO     | solver:test:320 - message loss: 0.022436721716076136
+2022-05-02 01:55:22.975 | INFO     | solver:test:321 - message SnR: -0.0011148075573146343
+2022-05-02 01:55:22.980 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:56:46.436 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:56:46.437 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 26_epoch
+2022-05-02 01:56:46.450 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:56:46.450 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:56:46.450 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:57:17.724 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:57:17.724 | INFO     | solver:test:318 - carrier loss: 7.199414056913156e-06
+2022-05-02 01:57:17.724 | INFO     | solver:test:319 - carrier SnR: 35.239051818847656
+2022-05-02 01:57:17.725 | INFO     | solver:test:320 - message loss: 0.02244461071677506
+2022-05-02 01:57:17.725 | INFO     | solver:test:321 - message SnR: -0.0026818057522177696
+2022-05-02 01:57:17.730 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 01:58:41.057 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:58:41.058 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 27_epoch
+2022-05-02 01:58:41.070 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 01:58:41.071 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 01:58:41.071 | INFO     | solver:test:295 - start testing...
+2022-05-02 01:59:12.363 | INFO     | solver:test:317 - finished testing!
+2022-05-02 01:59:12.363 | INFO     | solver:test:318 - carrier loss: 6.98746654848037e-06
+2022-05-02 01:59:12.363 | INFO     | solver:test:319 - carrier SnR: 35.36107635498047
+2022-05-02 01:59:12.364 | INFO     | solver:test:320 - message loss: 0.022442633286118507
+2022-05-02 01:59:12.364 | INFO     | solver:test:321 - message SnR: -0.002287199255079031
+2022-05-02 01:59:12.369 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:00:35.520 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:00:35.521 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 28_epoch
+2022-05-02 02:00:35.534 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:00:35.534 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:00:35.534 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:01:06.539 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:01:06.540 | INFO     | solver:test:318 - carrier loss: 1.1738016667095508e-05
+2022-05-02 02:01:06.540 | INFO     | solver:test:319 - carrier SnR: 33.110450744628906
+2022-05-02 02:01:06.540 | INFO     | solver:test:320 - message loss: 0.02244696533307433
+2022-05-02 02:01:06.540 | INFO     | solver:test:321 - message SnR: -0.003083175513893366
+2022-05-02 02:01:06.545 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:02:30.432 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:02:30.433 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 29_epoch
+2022-05-02 02:02:30.446 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:02:30.446 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:02:30.446 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:03:01.763 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:03:01.763 | INFO     | solver:test:318 - carrier loss: 8.768423924720992e-06
+2022-05-02 02:03:01.764 | INFO     | solver:test:319 - carrier SnR: 34.39433288574219
+2022-05-02 02:03:01.764 | INFO     | solver:test:320 - message loss: 0.02244862401857972
+2022-05-02 02:03:01.764 | INFO     | solver:test:321 - message SnR: -0.003524885745719075
+2022-05-02 02:03:01.769 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:04:25.501 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:04:25.502 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 30_epoch
+2022-05-02 02:04:25.514 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:04:25.515 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:04:25.515 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:04:56.480 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:04:56.481 | INFO     | solver:test:318 - carrier loss: 8.814242988819387e-06
+2022-05-02 02:04:56.481 | INFO     | solver:test:319 - carrier SnR: 34.347415924072266
+2022-05-02 02:04:56.481 | INFO     | solver:test:320 - message loss: 0.022439429303631186
+2022-05-02 02:04:56.482 | INFO     | solver:test:321 - message SnR: -0.0016032459679991007
+2022-05-02 02:04:56.486 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:06:20.147 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:06:20.148 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 31_epoch
+2022-05-02 02:06:20.160 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:06:20.161 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:06:20.161 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:06:51.375 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:06:51.376 | INFO     | solver:test:318 - carrier loss: 1.034842915714762e-05
+2022-05-02 02:06:51.376 | INFO     | solver:test:319 - carrier SnR: 33.60041046142578
+2022-05-02 02:06:51.376 | INFO     | solver:test:320 - message loss: 0.022438749438151717
+2022-05-02 02:06:51.376 | INFO     | solver:test:321 - message SnR: -0.0016013775020837784
+2022-05-02 02:06:51.382 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:08:14.455 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:08:14.456 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 32_epoch
+2022-05-02 02:08:14.468 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:08:14.469 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:08:14.469 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:08:45.143 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:08:45.143 | INFO     | solver:test:318 - carrier loss: 0.00016244700418610591
+2022-05-02 02:08:45.144 | INFO     | solver:test:319 - carrier SnR: 21.6075382232666
+2022-05-02 02:08:45.144 | INFO     | solver:test:320 - message loss: 0.022044753772206604
+2022-05-02 02:08:45.144 | INFO     | solver:test:321 - message SnR: 0.07076571881771088
+2022-05-02 02:08:45.149 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:10:09.194 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:10:09.195 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 33_epoch
+2022-05-02 02:10:09.208 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:10:09.208 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:10:09.208 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:10:39.487 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:10:39.487 | INFO     | solver:test:318 - carrier loss: 0.0009015521281980909
+2022-05-02 02:10:39.488 | INFO     | solver:test:319 - carrier SnR: 14.154266357421875
+2022-05-02 02:10:39.488 | INFO     | solver:test:320 - message loss: 0.017688698484562337
+2022-05-02 02:10:39.488 | INFO     | solver:test:321 - message SnR: 1.099439024925232
+2022-05-02 02:10:39.494 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:12:02.749 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:12:02.750 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 34_epoch
+2022-05-02 02:12:02.762 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:12:02.763 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:12:02.763 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:12:33.262 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:12:33.262 | INFO     | solver:test:318 - carrier loss: 0.0009375811350764707
+2022-05-02 02:12:33.262 | INFO     | solver:test:319 - carrier SnR: 13.978973388671875
+2022-05-02 02:12:33.263 | INFO     | solver:test:320 - message loss: 0.014770036097615957
+2022-05-02 02:12:33.263 | INFO     | solver:test:321 - message SnR: 2.24318790435791
+2022-05-02 02:12:33.268 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:13:56.691 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:13:56.692 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 35_epoch
+2022-05-02 02:13:56.704 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:13:56.705 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:13:56.705 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:14:28.167 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:14:28.168 | INFO     | solver:test:318 - carrier loss: 0.0008375940342375543
+2022-05-02 02:14:28.168 | INFO     | solver:test:319 - carrier SnR: 14.467368125915527
+2022-05-02 02:14:28.168 | INFO     | solver:test:320 - message loss: 0.014078432519454509
+2022-05-02 02:14:28.168 | INFO     | solver:test:321 - message SnR: 2.634481906890869
+2022-05-02 02:14:28.173 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:15:51.549 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:15:51.550 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 36_epoch
+2022-05-02 02:15:51.563 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:15:51.563 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:15:51.563 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:16:22.639 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:16:22.640 | INFO     | solver:test:318 - carrier loss: 0.0007803508015058469
+2022-05-02 02:16:22.640 | INFO     | solver:test:319 - carrier SnR: 14.775196075439453
+2022-05-02 02:16:22.640 | INFO     | solver:test:320 - message loss: 0.013758344517555088
+2022-05-02 02:16:22.641 | INFO     | solver:test:321 - message SnR: 2.843017578125
+2022-05-02 02:16:22.645 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:17:45.264 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:17:45.265 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 37_epoch
+2022-05-02 02:17:45.278 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:17:45.278 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:17:45.278 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:18:15.640 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:18:15.641 | INFO     | solver:test:318 - carrier loss: 0.0007960530165291857
+2022-05-02 02:18:15.641 | INFO     | solver:test:319 - carrier SnR: 14.688846588134766
+2022-05-02 02:18:15.641 | INFO     | solver:test:320 - message loss: 0.013411970459856093
+2022-05-02 02:18:15.641 | INFO     | solver:test:321 - message SnR: 3.0941362380981445
+2022-05-02 02:18:15.647 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:19:39.290 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:19:39.291 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 38_epoch
+2022-05-02 02:19:39.303 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:19:39.304 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:19:39.304 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:20:10.185 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:20:10.186 | INFO     | solver:test:318 - carrier loss: 0.000740338768082438
+2022-05-02 02:20:10.186 | INFO     | solver:test:319 - carrier SnR: 15.005613327026367
+2022-05-02 02:20:10.186 | INFO     | solver:test:320 - message loss: 0.013293642841745168
+2022-05-02 02:20:10.187 | INFO     | solver:test:321 - message SnR: 3.1865010261535645
+2022-05-02 02:20:10.192 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:21:33.914 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:21:33.915 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 39_epoch
+2022-05-02 02:21:33.928 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:21:33.929 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:21:33.929 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:22:04.977 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:22:04.977 | INFO     | solver:test:318 - carrier loss: 0.0007267410546774045
+2022-05-02 02:22:04.978 | INFO     | solver:test:319 - carrier SnR: 15.086250305175781
+2022-05-02 02:22:04.978 | INFO     | solver:test:320 - message loss: 0.013218443025834858
+2022-05-02 02:22:04.978 | INFO     | solver:test:321 - message SnR: 3.2476072311401367
+2022-05-02 02:22:04.983 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:23:28.534 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:23:28.535 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 40_epoch
+2022-05-02 02:23:28.547 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:23:28.548 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:23:28.548 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:23:59.022 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:23:59.022 | INFO     | solver:test:318 - carrier loss: 0.0007299011886061635
+2022-05-02 02:23:59.023 | INFO     | solver:test:319 - carrier SnR: 15.067246437072754
+2022-05-02 02:23:59.023 | INFO     | solver:test:320 - message loss: 0.013094847148749977
+2022-05-02 02:23:59.023 | INFO     | solver:test:321 - message SnR: 3.3524136543273926
+2022-05-02 02:23:59.029 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:25:21.847 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:25:21.848 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 41_epoch
+2022-05-02 02:25:21.860 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:25:21.861 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:25:21.861 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:25:52.396 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:25:52.396 | INFO     | solver:test:318 - carrier loss: 0.0006927838949195575
+2022-05-02 02:25:52.397 | INFO     | solver:test:319 - carrier SnR: 15.295495986938477
+2022-05-02 02:25:52.397 | INFO     | solver:test:320 - message loss: 0.01300761295715347
+2022-05-02 02:25:52.397 | INFO     | solver:test:321 - message SnR: 3.4295027256011963
+2022-05-02 02:25:52.402 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:27:16.219 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:27:16.220 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 42_epoch
+2022-05-02 02:27:16.232 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:27:16.233 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:27:16.233 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:27:46.497 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:27:46.497 | INFO     | solver:test:318 - carrier loss: 0.0006715878043905832
+2022-05-02 02:27:46.497 | INFO     | solver:test:319 - carrier SnR: 15.431037902832031
+2022-05-02 02:27:46.497 | INFO     | solver:test:320 - message loss: 0.012996282428503036
+2022-05-02 02:27:46.498 | INFO     | solver:test:321 - message SnR: 3.439802646636963
+2022-05-02 02:27:46.502 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:29:10.023 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:29:10.023 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 43_epoch
+2022-05-02 02:29:10.036 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:29:10.037 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:29:10.037 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:29:40.767 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:29:40.767 | INFO     | solver:test:318 - carrier loss: 0.0006750357351847924
+2022-05-02 02:29:40.768 | INFO     | solver:test:319 - carrier SnR: 15.408562660217285
+2022-05-02 02:29:40.768 | INFO     | solver:test:320 - message loss: 0.012949298310559243
+2022-05-02 02:29:40.768 | INFO     | solver:test:321 - message SnR: 3.482532024383545
+2022-05-02 02:29:40.774 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:31:04.157 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:31:04.158 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 44_epoch
+2022-05-02 02:31:04.170 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:31:04.171 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:31:04.171 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:31:36.216 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:31:36.217 | INFO     | solver:test:318 - carrier loss: 0.0006635826466663275
+2022-05-02 02:31:36.217 | INFO     | solver:test:319 - carrier SnR: 15.482832908630371
+2022-05-02 02:31:36.217 | INFO     | solver:test:320 - message loss: 0.012938776053488255
+2022-05-02 02:31:36.218 | INFO     | solver:test:321 - message SnR: 3.492568016052246
+2022-05-02 02:31:36.223 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:32:59.210 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:32:59.211 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 45_epoch
+2022-05-02 02:32:59.224 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:32:59.224 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:32:59.224 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:33:30.741 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:33:30.741 | INFO     | solver:test:318 - carrier loss: 0.0006656291370745748
+2022-05-02 02:33:30.742 | INFO     | solver:test:319 - carrier SnR: 15.469614028930664
+2022-05-02 02:33:30.742 | INFO     | solver:test:320 - message loss: 0.01289546606130898
+2022-05-02 02:33:30.742 | INFO     | solver:test:321 - message SnR: 3.5329666137695312
+2022-05-02 02:33:30.747 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:34:54.264 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:34:54.265 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 46_epoch
+2022-05-02 02:34:54.278 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:34:54.279 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:34:54.279 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:35:25.527 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:35:25.527 | INFO     | solver:test:318 - carrier loss: 0.000662540303892456
+2022-05-02 02:35:25.528 | INFO     | solver:test:319 - carrier SnR: 15.489859580993652
+2022-05-02 02:35:25.528 | INFO     | solver:test:320 - message loss: 0.012874492385890335
+2022-05-02 02:35:25.528 | INFO     | solver:test:321 - message SnR: 3.5530753135681152
+2022-05-02 02:35:25.533 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:36:48.032 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:36:48.033 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 47_epoch
+2022-05-02 02:36:48.045 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:36:48.046 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:36:48.046 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:37:19.776 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:37:19.776 | INFO     | solver:test:318 - carrier loss: 0.0006387472567439545
+2022-05-02 02:37:19.777 | INFO     | solver:test:319 - carrier SnR: 15.648966789245605
+2022-05-02 02:37:19.777 | INFO     | solver:test:320 - message loss: 0.0128893589717336
+2022-05-02 02:37:19.777 | INFO     | solver:test:321 - message SnR: 3.5388479232788086
+2022-05-02 02:37:19.782 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:38:43.148 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:38:43.149 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 48_epoch
+2022-05-02 02:38:43.162 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:38:43.162 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:38:43.162 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:39:14.298 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:39:14.298 | INFO     | solver:test:318 - carrier loss: 0.0006484140467364341
+2022-05-02 02:39:14.299 | INFO     | solver:test:319 - carrier SnR: 15.583623886108398
+2022-05-02 02:39:14.299 | INFO     | solver:test:320 - message loss: 0.012857653317041695
+2022-05-02 02:39:14.299 | INFO     | solver:test:321 - message SnR: 3.5691981315612793
+2022-05-02 02:39:14.304 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:40:37.566 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:40:37.567 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 49_epoch
+2022-05-02 02:40:37.580 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:40:37.580 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:40:37.581 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:41:09.175 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:41:09.175 | INFO     | solver:test:318 - carrier loss: 0.0006508111473522149
+2022-05-02 02:41:09.175 | INFO     | solver:test:319 - carrier SnR: 15.567094802856445
+2022-05-02 02:41:09.176 | INFO     | solver:test:320 - message loss: 0.012821293086744845
+2022-05-02 02:41:09.176 | INFO     | solver:test:321 - message SnR: 3.6039910316467285
+2022-05-02 02:41:09.181 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:42:32.628 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:42:32.629 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 50_epoch
+2022-05-02 02:42:32.641 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:42:32.641 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:42:32.642 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:43:02.978 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:43:02.979 | INFO     | solver:test:318 - carrier loss: 0.0006321253313217312
+2022-05-02 02:43:02.979 | INFO     | solver:test:319 - carrier SnR: 15.69426441192627
+2022-05-02 02:43:02.979 | INFO     | solver:test:320 - message loss: 0.012833066692110151
+2022-05-02 02:43:02.980 | INFO     | solver:test:321 - message SnR: 3.5924136638641357
+2022-05-02 02:43:02.985 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:44:26.707 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:44:26.708 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 51_epoch
+2022-05-02 02:44:26.720 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:44:26.721 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:44:26.721 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:44:58.141 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:44:58.141 | INFO     | solver:test:318 - carrier loss: 0.000629368303634692
+2022-05-02 02:44:58.142 | INFO     | solver:test:319 - carrier SnR: 15.713359832763672
+2022-05-02 02:44:58.142 | INFO     | solver:test:320 - message loss: 0.012815126916393638
+2022-05-02 02:44:58.142 | INFO     | solver:test:321 - message SnR: 3.60963773727417
+2022-05-02 02:44:58.147 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:46:21.163 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:46:21.164 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 52_epoch
+2022-05-02 02:46:21.176 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:46:21.177 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:46:21.177 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:46:52.476 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:46:52.476 | INFO     | solver:test:318 - carrier loss: 0.000619787817413453
+2022-05-02 02:46:52.476 | INFO     | solver:test:319 - carrier SnR: 15.779767036437988
+2022-05-02 02:46:52.476 | INFO     | solver:test:320 - message loss: 0.01281079463660717
+2022-05-02 02:46:52.477 | INFO     | solver:test:321 - message SnR: 3.613959789276123
+2022-05-02 02:46:52.481 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:48:16.318 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:48:16.319 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 53_epoch
+2022-05-02 02:48:16.331 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:48:16.332 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:48:16.332 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:48:47.246 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:48:47.246 | INFO     | solver:test:318 - carrier loss: 0.0006280205452640075
+2022-05-02 02:48:47.247 | INFO     | solver:test:319 - carrier SnR: 15.72257137298584
+2022-05-02 02:48:47.247 | INFO     | solver:test:320 - message loss: 0.012782459089066833
+2022-05-02 02:48:47.247 | INFO     | solver:test:321 - message SnR: 3.642111301422119
+2022-05-02 02:48:47.252 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:50:10.657 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:50:10.658 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 54_epoch
+2022-05-02 02:50:10.670 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:50:10.671 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:50:10.671 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:50:41.441 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:50:41.442 | INFO     | solver:test:318 - carrier loss: 0.000619552669377299
+2022-05-02 02:50:41.442 | INFO     | solver:test:319 - carrier SnR: 15.781530380249023
+2022-05-02 02:50:41.442 | INFO     | solver:test:320 - message loss: 0.012771297944709659
+2022-05-02 02:50:41.443 | INFO     | solver:test:321 - message SnR: 3.652933359146118
+2022-05-02 02:50:41.448 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:52:05.320 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:52:05.321 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 55_epoch
+2022-05-02 02:52:05.333 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:52:05.334 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:52:05.334 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:52:36.331 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:52:36.331 | INFO     | solver:test:318 - carrier loss: 0.000614867309195688
+2022-05-02 02:52:36.331 | INFO     | solver:test:319 - carrier SnR: 15.814672470092773
+2022-05-02 02:52:36.332 | INFO     | solver:test:320 - message loss: 0.012762150727212429
+2022-05-02 02:52:36.332 | INFO     | solver:test:321 - message SnR: 3.6617650985717773
+2022-05-02 02:52:36.337 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:53:59.426 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:53:59.427 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 56_epoch
+2022-05-02 02:53:59.440 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:53:59.440 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:53:59.440 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:54:31.544 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:54:31.545 | INFO     | solver:test:318 - carrier loss: 0.0006122512495494448
+2022-05-02 02:54:31.545 | INFO     | solver:test:319 - carrier SnR: 15.833084106445312
+2022-05-02 02:54:31.545 | INFO     | solver:test:320 - message loss: 0.012787661398760974
+2022-05-02 02:54:31.546 | INFO     | solver:test:321 - message SnR: 3.6373720169067383
+2022-05-02 02:54:31.550 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:55:54.966 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:55:54.967 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 57_epoch
+2022-05-02 02:55:54.980 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:55:54.980 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:55:54.980 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:56:25.900 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:56:25.901 | INFO     | solver:test:318 - carrier loss: 0.0006085020577302203
+2022-05-02 02:56:25.901 | INFO     | solver:test:319 - carrier SnR: 15.859642028808594
+2022-05-02 02:56:25.901 | INFO     | solver:test:320 - message loss: 0.01275940757477656
+2022-05-02 02:56:25.902 | INFO     | solver:test:321 - message SnR: 3.6650097370147705
+2022-05-02 02:56:25.907 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:57:49.221 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:57:49.221 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 58_epoch
+2022-05-02 02:57:49.234 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:57:49.234 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:57:49.235 | INFO     | solver:test:295 - start testing...
+2022-05-02 02:58:20.223 | INFO     | solver:test:317 - finished testing!
+2022-05-02 02:58:20.223 | INFO     | solver:test:318 - carrier loss: 0.0005916144509683363
+2022-05-02 02:58:20.224 | INFO     | solver:test:319 - carrier SnR: 15.982266426086426
+2022-05-02 02:58:20.224 | INFO     | solver:test:320 - message loss: 0.012767393025569618
+2022-05-02 02:58:20.224 | INFO     | solver:test:321 - message SnR: 3.6571667194366455
+2022-05-02 02:58:20.229 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 02:59:43.540 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:59:43.541 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 59_epoch
+2022-05-02 02:59:43.553 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 02:59:43.554 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 02:59:43.554 | INFO     | solver:test:295 - start testing...
+2022-05-02 03:00:13.560 | INFO     | solver:test:317 - finished testing!
+2022-05-02 03:00:13.561 | INFO     | solver:test:318 - carrier loss: 0.0006050278607290238
+2022-05-02 03:00:13.561 | INFO     | solver:test:319 - carrier SnR: 15.884665489196777
+2022-05-02 03:00:13.561 | INFO     | solver:test:320 - message loss: 0.012738013931084424
+2022-05-02 03:00:13.562 | INFO     | solver:test:321 - message SnR: 3.6869473457336426
+2022-05-02 03:00:13.567 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 03:01:36.719 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:01:36.720 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 60_epoch
+2022-05-02 03:01:36.732 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:01:36.733 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 03:01:36.733 | INFO     | solver:test:295 - start testing...
+2022-05-02 03:02:07.847 | INFO     | solver:test:317 - finished testing!
+2022-05-02 03:02:07.848 | INFO     | solver:test:318 - carrier loss: 0.000584385448746616
+2022-05-02 03:02:07.848 | INFO     | solver:test:319 - carrier SnR: 16.036115646362305
+2022-05-02 03:02:07.848 | INFO     | solver:test:320 - message loss: 0.012743601691909134
+2022-05-02 03:02:07.849 | INFO     | solver:test:321 - message SnR: 3.68046498298645
+2022-05-02 03:02:07.854 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 03:03:31.383 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:03:31.384 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 61_epoch
+2022-05-02 03:03:31.396 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:03:31.397 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 03:03:31.397 | INFO     | solver:test:295 - start testing...
+2022-05-02 03:04:02.771 | INFO     | solver:test:317 - finished testing!
+2022-05-02 03:04:02.771 | INFO     | solver:test:318 - carrier loss: 0.0005925649238633923
+2022-05-02 03:04:02.772 | INFO     | solver:test:319 - carrier SnR: 15.975349426269531
+2022-05-02 03:04:02.772 | INFO     | solver:test:320 - message loss: 0.01273655256954953
+2022-05-02 03:04:02.772 | INFO     | solver:test:321 - message SnR: 3.6888790130615234
+2022-05-02 03:04:02.777 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 03:05:26.708 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:05:26.709 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 62_epoch
+2022-05-02 03:05:26.722 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:05:26.722 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 03:05:26.722 | INFO     | solver:test:295 - start testing...
+2022-05-02 03:05:58.213 | INFO     | solver:test:317 - finished testing!
+2022-05-02 03:05:58.213 | INFO     | solver:test:318 - carrier loss: 0.0005913382701692171
+2022-05-02 03:05:58.213 | INFO     | solver:test:319 - carrier SnR: 15.984376907348633
+2022-05-02 03:05:58.214 | INFO     | solver:test:320 - message loss: 0.012718797603156418
+2022-05-02 03:05:58.214 | INFO     | solver:test:321 - message SnR: 3.70662784576416
+2022-05-02 03:05:58.219 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 03:07:21.372 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:07:21.373 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 63_epoch
+2022-05-02 03:07:21.386 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:07:21.387 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 03:07:21.387 | INFO     | solver:test:295 - start testing...
+2022-05-02 03:07:51.163 | INFO     | solver:test:317 - finished testing!
+2022-05-02 03:07:51.163 | INFO     | solver:test:318 - carrier loss: 0.0005863704827788752
+2022-05-02 03:07:51.164 | INFO     | solver:test:319 - carrier SnR: 16.021198272705078
+2022-05-02 03:07:51.164 | INFO     | solver:test:320 - message loss: 0.012733616109471768
+2022-05-02 03:07:51.164 | INFO     | solver:test:321 - message SnR: 3.692229747772217
+2022-05-02 03:07:51.170 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 03:09:14.388 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:09:14.389 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 64_epoch
+2022-05-02 03:09:14.402 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:09:14.402 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 03:09:14.402 | INFO     | solver:test:295 - start testing...
+2022-05-02 03:09:45.527 | INFO     | solver:test:317 - finished testing!
+2022-05-02 03:09:45.528 | INFO     | solver:test:318 - carrier loss: 0.0005822761741001159
+2022-05-02 03:09:45.528 | INFO     | solver:test:319 - carrier SnR: 16.051631927490234
+2022-05-02 03:09:45.528 | INFO     | solver:test:320 - message loss: 0.012740169418975711
+2022-05-02 03:09:45.528 | INFO     | solver:test:321 - message SnR: 3.6852352619171143
+2022-05-02 03:09:45.533 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 03:11:08.729 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:11:08.730 | INFO     | solver_n_msg_conditional:save_models:72 - saving model to: /content/drive/MyDrive/DL-dataset/FINAL_codes-1/ckpt
+==> suffix: 65_epoch
+2022-05-02 03:11:08.743 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:11:08.743 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 03:11:08.743 | INFO     | solver:test:295 - start testing...
+2022-05-02 03:11:40.272 | INFO     | solver:test:317 - finished testing!
+2022-05-02 03:11:40.272 | INFO     | solver:test:318 - carrier loss: 0.0005838701472384855
+2022-05-02 03:11:40.272 | INFO     | solver:test:319 - carrier SnR: 16.03974151611328
+2022-05-02 03:11:40.272 | INFO     | solver:test:320 - message loss: 0.01272096042521298
+2022-05-02 03:11:40.273 | INFO     | solver:test:321 - message SnR: 3.7042627334594727
+2022-05-02 03:11:40.278 | INFO     | solver:train:274 - finished training!
+2022-05-02 03:11:40.282 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 03:11:40.283 | INFO     | solver:test:292 - Mode: test
+2022-05-02 03:11:40.283 | INFO     | solver:test:295 - start testing...
+2022-05-02 03:12:59.578 | INFO     | solver:test:317 - finished testing!
+2022-05-02 03:12:59.578 | INFO     | solver:test:318 - carrier loss: 0.0005422604772320483
+2022-05-02 03:12:59.578 | INFO     | solver:test:319 - carrier SnR: 16.086318969726562
+2022-05-02 03:12:59.579 | INFO     | solver:test:320 - message loss: 0.012632370984647423
+2022-05-02 03:12:59.579 | INFO     | solver:test:321 - message SnR: 3.8315978050231934
+2022-05-02 03:12:59.582 | INFO     | experiment:save:163 - saving experiment
