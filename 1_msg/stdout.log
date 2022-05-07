@@ -1,0 +1,854 @@
+2022-04-30 06:02:23.193 | INFO     | solver_n_msg_deepsteg:__init__:18 - running multiple decoders solver!
+2022-04-30 06:02:25.526 | DEBUG    | solver_n_msg_deepsteg:__init__:47 - DataParallel(
+  (module): Encoder(
+    (main): Sequential(
+      (0): GatedBlock(
+        (conv): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+)
+2022-04-30 06:02:25.527 | DEBUG    | solver_n_msg_deepsteg:__init__:48 - DataParallel(
+  (module): CarrierDecoder(
+    (main): Sequential(
+      (0): GatedBlock(
+        (conv): Conv2d(68, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(68, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (3): GatedBlock(
+        (conv): Conv2d(64, 2, kernel_size=(1, 1), stride=(1, 1))
+        (gate): Conv2d(64, 2, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+  )
+)
+2022-04-30 06:02:25.528 | DEBUG    | solver_n_msg_deepsteg:__init__:49 - [DataParallel(
+  (module): MsgDecoder(
+    (main): Sequential(
+      (0): GatedBlock(
+        (conv): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (3): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (4): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (5): GatedBlock(
+        (conv): Conv2d(64, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+)]
+2022-04-30 06:02:25.529 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:02:25.529 | INFO     | solver:train:191 - start training...
+2022-04-30 06:02:25.531 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:04:57.935 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:04:57.937 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 1_epoch
+2022-04-30 06:04:57.964 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:04:57.965 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:04:57.965 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:05:30.981 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:05:30.982 | INFO     | solver:test:310 - carrier loss: 6.820026710192905e-05
+2022-04-30 06:05:30.983 | INFO     | solver:test:311 - carrier SnR: 25.62429428100586
+2022-04-30 06:05:30.984 | INFO     | solver:test:312 - message loss: 0.025250880520790817
+2022-04-30 06:05:30.984 | INFO     | solver:test:313 - message SnR: -0.0005176218692213297
+2022-04-30 06:05:31.116 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:08:04.138 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:08:04.139 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 2_epoch
+2022-04-30 06:08:04.167 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:08:04.168 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:08:04.168 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:08:37.145 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:08:37.146 | INFO     | solver:test:310 - carrier loss: 2.326815290507511e-05
+2022-04-30 06:08:37.147 | INFO     | solver:test:311 - carrier SnR: 30.15770721435547
+2022-04-30 06:08:37.147 | INFO     | solver:test:312 - message loss: 0.025251257695257663
+2022-04-30 06:08:37.148 | INFO     | solver:test:313 - message SnR: -0.0016211277106776834
+2022-04-30 06:08:37.278 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:11:10.428 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:11:10.429 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 3_epoch
+2022-04-30 06:11:10.454 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:11:10.455 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:11:10.455 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:11:43.812 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:11:43.813 | INFO     | solver:test:310 - carrier loss: 1.7131736316514436e-05
+2022-04-30 06:11:43.813 | INFO     | solver:test:311 - carrier SnR: 31.44180679321289
+2022-04-30 06:11:43.814 | INFO     | solver:test:312 - message loss: 0.025251072257757187
+2022-04-30 06:11:43.815 | INFO     | solver:test:313 - message SnR: -0.000731328153051436
+2022-04-30 06:11:43.945 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:14:16.002 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:14:16.003 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 4_epoch
+2022-04-30 06:14:16.030 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:14:16.031 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:14:16.032 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:14:49.230 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:14:49.230 | INFO     | solver:test:310 - carrier loss: 1.3162598685084958e-05
+2022-04-30 06:14:49.231 | INFO     | solver:test:311 - carrier SnR: 32.55924987792969
+2022-04-30 06:14:49.231 | INFO     | solver:test:312 - message loss: 0.02525168817490339
+2022-04-30 06:14:49.232 | INFO     | solver:test:313 - message SnR: -0.004071272909641266
+2022-04-30 06:14:49.363 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:17:21.235 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:17:21.236 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 5_epoch
+2022-04-30 06:17:21.264 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:17:21.265 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:17:21.265 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:17:54.394 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:17:54.394 | INFO     | solver:test:310 - carrier loss: 1.4108885250607273e-05
+2022-04-30 06:17:54.395 | INFO     | solver:test:311 - carrier SnR: 32.202789306640625
+2022-04-30 06:17:54.396 | INFO     | solver:test:312 - message loss: 0.025251082770526408
+2022-04-30 06:17:54.396 | INFO     | solver:test:313 - message SnR: -0.001332694897428155
+2022-04-30 06:17:54.526 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:20:28.009 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:20:28.011 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 6_epoch
+2022-04-30 06:20:28.039 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:20:28.039 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:20:28.039 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:21:01.284 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:21:01.285 | INFO     | solver:test:310 - carrier loss: 8.598789929237682e-06
+2022-04-30 06:21:01.286 | INFO     | solver:test:311 - carrier SnR: 34.4531364440918
+2022-04-30 06:21:01.287 | INFO     | solver:test:312 - message loss: 0.025251280277967452
+2022-04-30 06:21:01.287 | INFO     | solver:test:313 - message SnR: -0.002350965514779091
+2022-04-30 06:21:01.418 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:23:33.266 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:23:33.267 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 7_epoch
+2022-04-30 06:23:33.295 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:23:33.295 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:23:33.296 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:24:06.361 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:24:06.362 | INFO     | solver:test:310 - carrier loss: 8.224399774917402e-06
+2022-04-30 06:24:06.363 | INFO     | solver:test:311 - carrier SnR: 34.705326080322266
+2022-04-30 06:24:06.363 | INFO     | solver:test:312 - message loss: 0.025251204792410137
+2022-04-30 06:24:06.364 | INFO     | solver:test:313 - message SnR: -0.0017149645136669278
+2022-04-30 06:24:06.495 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:26:38.612 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:26:38.613 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 8_epoch
+2022-04-30 06:26:38.641 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:26:38.642 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:26:38.642 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:27:12.215 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:27:12.215 | INFO     | solver:test:310 - carrier loss: 6.403976906767639e-06
+2022-04-30 06:27:12.216 | INFO     | solver:test:311 - carrier SnR: 35.703826904296875
+2022-04-30 06:27:12.217 | INFO     | solver:test:312 - message loss: 0.025251401305198668
+2022-04-30 06:27:12.217 | INFO     | solver:test:313 - message SnR: -0.002465699566528201
+2022-04-30 06:27:12.348 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:29:44.414 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:29:44.415 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 9_epoch
+2022-04-30 06:29:44.441 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:29:44.442 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:29:44.442 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:30:17.447 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:30:17.448 | INFO     | solver:test:310 - carrier loss: 4.410280592128402e-05
+2022-04-30 06:30:17.449 | INFO     | solver:test:311 - carrier SnR: 27.577220916748047
+2022-04-30 06:30:17.449 | INFO     | solver:test:312 - message loss: 0.02525120960921049
+2022-04-30 06:30:17.450 | INFO     | solver:test:313 - message SnR: -0.0018527283100411296
+2022-04-30 06:30:17.580 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:32:49.508 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:32:49.509 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 10_epoch
+2022-04-30 06:32:49.536 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:32:49.536 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:32:49.537 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:33:22.721 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:33:22.722 | INFO     | solver:test:310 - carrier loss: 5.215024966673809e-06
+2022-04-30 06:33:22.722 | INFO     | solver:test:311 - carrier SnR: 36.696571350097656
+2022-04-30 06:33:22.723 | INFO     | solver:test:312 - message loss: 0.025252261362969874
+2022-04-30 06:33:22.724 | INFO     | solver:test:313 - message SnR: -0.006883191876113415
+2022-04-30 06:33:22.855 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:35:54.660 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:35:54.661 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 11_epoch
+2022-04-30 06:35:54.688 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:35:54.689 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:35:54.689 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:36:27.561 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:36:27.562 | INFO     | solver:test:310 - carrier loss: 4.909185347059975e-06
+2022-04-30 06:36:27.563 | INFO     | solver:test:311 - carrier SnR: 36.68267059326172
+2022-04-30 06:36:27.563 | INFO     | solver:test:312 - message loss: 0.025251949187368155
+2022-04-30 06:36:27.564 | INFO     | solver:test:313 - message SnR: -0.005136019550263882
+2022-04-30 06:36:27.695 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:38:59.942 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:38:59.943 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 12_epoch
+2022-04-30 06:38:59.970 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:38:59.970 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:38:59.971 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:39:33.303 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:39:33.303 | INFO     | solver:test:310 - carrier loss: 9.340009801235284e-06
+2022-04-30 06:39:33.304 | INFO     | solver:test:311 - carrier SnR: 33.93434524536133
+2022-04-30 06:39:33.304 | INFO     | solver:test:312 - message loss: 0.025252682831138372
+2022-04-30 06:39:33.305 | INFO     | solver:test:313 - message SnR: -0.008998165838420391
+2022-04-30 06:39:33.437 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:42:06.021 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:42:06.022 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 13_epoch
+2022-04-30 06:42:06.048 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:42:06.049 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:42:06.049 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:42:39.011 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:42:39.012 | INFO     | solver:test:310 - carrier loss: 3.3084463748309646e-06
+2022-04-30 06:42:39.013 | INFO     | solver:test:311 - carrier SnR: 38.64341735839844
+2022-04-30 06:42:39.013 | INFO     | solver:test:312 - message loss: 0.025252429056912662
+2022-04-30 06:42:39.014 | INFO     | solver:test:313 - message SnR: -0.006748354062438011
+2022-04-30 06:42:39.145 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:45:10.959 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:45:10.960 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 14_epoch
+2022-04-30 06:45:10.986 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:45:10.987 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:45:10.987 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:45:44.102 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:45:44.102 | INFO     | solver:test:310 - carrier loss: 1.7458530466683442e-05
+2022-04-30 06:45:44.103 | INFO     | solver:test:311 - carrier SnR: 31.533329010009766
+2022-04-30 06:45:44.104 | INFO     | solver:test:312 - message loss: 0.025254023507237433
+2022-04-30 06:45:44.105 | INFO     | solver:test:313 - message SnR: -0.01478937454521656
+2022-04-30 06:45:44.235 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:48:16.587 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:48:16.588 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 15_epoch
+2022-04-30 06:48:16.615 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:48:16.616 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:48:16.616 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:48:49.617 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:48:49.618 | INFO     | solver:test:310 - carrier loss: 3.633138303484884e-06
+2022-04-30 06:48:49.619 | INFO     | solver:test:311 - carrier SnR: 38.07441329956055
+2022-04-30 06:48:49.619 | INFO     | solver:test:312 - message loss: 0.025252866070717573
+2022-04-30 06:48:49.620 | INFO     | solver:test:313 - message SnR: -0.010462331585586071
+2022-04-30 06:48:49.752 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:51:22.772 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:51:22.773 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 16_epoch
+2022-04-30 06:51:22.802 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:51:22.803 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:51:22.803 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:51:56.093 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:51:56.094 | INFO     | solver:test:310 - carrier loss: 4.492947421385907e-05
+2022-04-30 06:51:56.095 | INFO     | solver:test:311 - carrier SnR: 27.03382110595703
+2022-04-30 06:51:56.095 | INFO     | solver:test:312 - message loss: 0.025124095346778633
+2022-04-30 06:51:56.096 | INFO     | solver:test:313 - message SnR: 0.04451983422040939
+2022-04-30 06:51:56.226 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:54:28.925 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:54:28.926 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 17_epoch
+2022-04-30 06:54:28.954 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:54:28.955 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:54:28.956 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:55:02.445 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:55:02.445 | INFO     | solver:test:310 - carrier loss: 1.2494608099586913e-05
+2022-04-30 06:55:02.446 | INFO     | solver:test:311 - carrier SnR: 32.65088653564453
+2022-04-30 06:55:02.447 | INFO     | solver:test:312 - message loss: 0.025228379055857657
+2022-04-30 06:55:02.447 | INFO     | solver:test:313 - message SnR: -0.03547811135649681
+2022-04-30 06:55:02.578 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 06:57:35.350 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:57:35.351 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 18_epoch
+2022-04-30 06:57:35.377 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 06:57:35.378 | INFO     | solver:test:288 - phase: validation
+2022-04-30 06:57:35.378 | INFO     | solver:test:291 - start testing...
+2022-04-30 06:58:08.470 | INFO     | solver:test:309 - finished testing!
+2022-04-30 06:58:08.470 | INFO     | solver:test:310 - carrier loss: 0.000641328404075466
+2022-04-30 06:58:08.471 | INFO     | solver:test:311 - carrier SnR: 15.442753791809082
+2022-04-30 06:58:08.472 | INFO     | solver:test:312 - message loss: 0.01025797059200704
+2022-04-30 06:58:08.472 | INFO     | solver:test:313 - message SnR: 26.233673095703125
+2022-04-30 06:58:08.603 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:00:41.687 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:00:41.688 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 19_epoch
+2022-04-30 07:00:41.714 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:00:41.714 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:00:41.715 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:01:15.411 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:01:15.412 | INFO     | solver:test:310 - carrier loss: 0.0004594238866120577
+2022-04-30 07:01:15.413 | INFO     | solver:test:311 - carrier SnR: 16.900285720825195
+2022-04-30 07:01:15.413 | INFO     | solver:test:312 - message loss: 0.008588476287201047
+2022-04-30 07:01:15.414 | INFO     | solver:test:313 - message SnR: 33.2346305847168
+2022-04-30 07:01:15.544 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:03:48.842 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:03:48.844 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 20_epoch
+2022-04-30 07:03:48.872 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:03:48.872 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:03:48.872 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:04:22.611 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:04:22.612 | INFO     | solver:test:310 - carrier loss: 0.0003670016441028565
+2022-04-30 07:04:22.613 | INFO     | solver:test:311 - carrier SnR: 17.83597183227539
+2022-04-30 07:04:22.613 | INFO     | solver:test:312 - message loss: 0.008143934451043605
+2022-04-30 07:04:22.614 | INFO     | solver:test:313 - message SnR: 35.399776458740234
+2022-04-30 07:04:22.745 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:06:55.411 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:06:55.412 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 21_epoch
+2022-04-30 07:06:55.438 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:06:55.439 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:06:55.439 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:07:29.039 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:07:29.039 | INFO     | solver:test:310 - carrier loss: 0.0002487157917348668
+2022-04-30 07:07:29.040 | INFO     | solver:test:311 - carrier SnR: 19.51763916015625
+2022-04-30 07:07:29.041 | INFO     | solver:test:312 - message loss: 0.007620933058671653
+2022-04-30 07:07:29.041 | INFO     | solver:test:313 - message SnR: 38.436683654785156
+2022-04-30 07:07:29.172 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:10:02.077 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:10:02.078 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 22_epoch
+2022-04-30 07:10:02.107 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:10:02.108 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:10:02.108 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:10:35.944 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:10:35.945 | INFO     | solver:test:310 - carrier loss: 0.00020123218628577888
+2022-04-30 07:10:35.946 | INFO     | solver:test:311 - carrier SnR: 20.434566497802734
+2022-04-30 07:10:35.946 | INFO     | solver:test:312 - message loss: 0.00732417175732553
+2022-04-30 07:10:35.947 | INFO     | solver:test:313 - message SnR: 40.53387451171875
+2022-04-30 07:10:36.078 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:13:08.938 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:13:08.940 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 23_epoch
+2022-04-30 07:13:08.966 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:13:08.967 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:13:08.967 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:13:42.220 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:13:42.221 | INFO     | solver:test:310 - carrier loss: 0.00018492493272060528
+2022-04-30 07:13:42.222 | INFO     | solver:test:311 - carrier SnR: 20.801427841186523
+2022-04-30 07:13:42.222 | INFO     | solver:test:312 - message loss: 0.007196609020233154
+2022-04-30 07:13:42.223 | INFO     | solver:test:313 - message SnR: 41.246116638183594
+2022-04-30 07:13:42.353 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:16:15.425 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:16:15.426 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 24_epoch
+2022-04-30 07:16:15.451 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:16:15.451 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:16:15.452 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:16:48.876 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:16:48.877 | INFO     | solver:test:310 - carrier loss: 0.000167335234436905
+2022-04-30 07:16:48.878 | INFO     | solver:test:311 - carrier SnR: 21.227811813354492
+2022-04-30 07:16:48.878 | INFO     | solver:test:312 - message loss: 0.007109258541837335
+2022-04-30 07:16:48.879 | INFO     | solver:test:313 - message SnR: 42.01789855957031
+2022-04-30 07:16:49.010 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:19:21.289 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:19:21.290 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 25_epoch
+2022-04-30 07:19:21.392 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:19:21.393 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:19:21.393 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:19:55.045 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:19:55.046 | INFO     | solver:test:310 - carrier loss: 0.00016667663579573855
+2022-04-30 07:19:55.047 | INFO     | solver:test:311 - carrier SnR: 21.236282348632812
+2022-04-30 07:19:55.048 | INFO     | solver:test:312 - message loss: 0.007046135359443724
+2022-04-30 07:19:55.049 | INFO     | solver:test:313 - message SnR: 41.68563461303711
+2022-04-30 07:19:55.179 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:22:28.009 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:22:28.011 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 26_epoch
+2022-04-30 07:22:28.039 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:22:28.040 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:22:28.040 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:23:01.697 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:23:01.698 | INFO     | solver:test:310 - carrier loss: 0.0002145076445885934
+2022-04-30 07:23:01.699 | INFO     | solver:test:311 - carrier SnR: 20.141437530517578
+2022-04-30 07:23:01.699 | INFO     | solver:test:312 - message loss: 0.0011777090984396636
+2022-04-30 07:23:01.700 | INFO     | solver:test:313 - message SnR: 96.82855224609375
+2022-04-30 07:23:01.830 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:25:34.378 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:25:34.379 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 27_epoch
+2022-04-30 07:25:34.406 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:25:34.406 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:25:34.407 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:26:07.297 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:26:07.297 | INFO     | solver:test:310 - carrier loss: 0.00019706370175117627
+2022-04-30 07:26:07.298 | INFO     | solver:test:311 - carrier SnR: 20.507678985595703
+2022-04-30 07:26:07.299 | INFO     | solver:test:312 - message loss: 0.0010750325215049088
+2022-04-30 07:26:07.300 | INFO     | solver:test:313 - message SnR: 99.28362274169922
+2022-04-30 07:26:07.430 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:28:40.158 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:28:40.159 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 28_epoch
+2022-04-30 07:28:40.190 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:28:40.191 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:28:40.191 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:29:14.133 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:29:14.134 | INFO     | solver:test:310 - carrier loss: 0.00018982616974972188
+2022-04-30 07:29:14.135 | INFO     | solver:test:311 - carrier SnR: 20.67343521118164
+2022-04-30 07:29:14.135 | INFO     | solver:test:312 - message loss: 0.0008987082461826503
+2022-04-30 07:29:14.136 | INFO     | solver:test:313 - message SnR: 106.61456298828125
+2022-04-30 07:29:14.268 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:31:47.258 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:31:47.259 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 29_epoch
+2022-04-30 07:31:47.287 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:31:47.288 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:31:47.288 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:32:20.789 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:32:20.789 | INFO     | solver:test:310 - carrier loss: 0.00017444849474122749
+2022-04-30 07:32:20.790 | INFO     | solver:test:311 - carrier SnR: 21.032419204711914
+2022-04-30 07:32:20.791 | INFO     | solver:test:312 - message loss: 0.0008980005793273449
+2022-04-30 07:32:20.791 | INFO     | solver:test:313 - message SnR: 106.49118041992188
+2022-04-30 07:32:20.922 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:34:53.038 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:34:53.039 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 30_epoch
+2022-04-30 07:34:53.067 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:34:53.068 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:34:53.068 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:35:26.758 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:35:26.758 | INFO     | solver:test:310 - carrier loss: 0.00016040554724168032
+2022-04-30 07:35:26.759 | INFO     | solver:test:311 - carrier SnR: 21.39310073852539
+2022-04-30 07:35:26.759 | INFO     | solver:test:312 - message loss: 0.000892656453885138
+2022-04-30 07:35:26.760 | INFO     | solver:test:313 - message SnR: 106.75332641601562
+2022-04-30 07:35:26.891 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:37:59.887 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:37:59.888 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 31_epoch
+2022-04-30 07:37:59.915 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:37:59.916 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:37:59.916 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:38:33.192 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:38:33.192 | INFO     | solver:test:310 - carrier loss: 0.00017102516995510085
+2022-04-30 07:38:33.193 | INFO     | solver:test:311 - carrier SnR: 21.102142333984375
+2022-04-30 07:38:33.193 | INFO     | solver:test:312 - message loss: 0.0010760703480336815
+2022-04-30 07:38:33.194 | INFO     | solver:test:313 - message SnR: 100.50776672363281
+2022-04-30 07:38:33.325 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:41:05.478 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:41:05.479 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 32_epoch
+2022-04-30 07:41:05.506 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:41:05.507 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:41:05.507 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:41:38.654 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:41:38.655 | INFO     | solver:test:310 - carrier loss: 0.0001564749003155157
+2022-04-30 07:41:38.656 | INFO     | solver:test:311 - carrier SnR: 21.502899169921875
+2022-04-30 07:41:38.656 | INFO     | solver:test:312 - message loss: 0.000751683795126155
+2022-04-30 07:41:38.657 | INFO     | solver:test:313 - message SnR: 113.14188385009766
+2022-04-30 07:41:38.788 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:44:11.105 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:44:11.106 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 33_epoch
+2022-04-30 07:44:11.136 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:44:11.136 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:44:11.137 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:44:44.611 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:44:44.612 | INFO     | solver:test:310 - carrier loss: 0.00014600479084765538
+2022-04-30 07:44:44.613 | INFO     | solver:test:311 - carrier SnR: 21.796062469482422
+2022-04-30 07:44:44.613 | INFO     | solver:test:312 - message loss: 0.000722669007256627
+2022-04-30 07:44:44.614 | INFO     | solver:test:313 - message SnR: 114.24940490722656
+2022-04-30 07:44:44.748 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:47:16.992 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:47:16.993 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 34_epoch
+2022-04-30 07:47:17.018 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:47:17.019 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:47:17.019 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:47:50.324 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:47:50.325 | INFO     | solver:test:310 - carrier loss: 0.00013972095839562826
+2022-04-30 07:47:50.326 | INFO     | solver:test:311 - carrier SnR: 21.98973846435547
+2022-04-30 07:47:50.327 | INFO     | solver:test:312 - message loss: 0.0007027559784473852
+2022-04-30 07:47:50.328 | INFO     | solver:test:313 - message SnR: 115.5862808227539
+2022-04-30 07:47:50.458 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:50:22.626 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:50:22.628 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 35_epoch
+2022-04-30 07:50:22.675 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:50:22.676 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:50:22.676 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:50:55.967 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:50:55.968 | INFO     | solver:test:310 - carrier loss: 0.00013469332913518882
+2022-04-30 07:50:55.969 | INFO     | solver:test:311 - carrier SnR: 22.143394470214844
+2022-04-30 07:50:55.969 | INFO     | solver:test:312 - message loss: 0.0006833707195473835
+2022-04-30 07:50:55.970 | INFO     | solver:test:313 - message SnR: 116.5566177368164
+2022-04-30 07:50:56.101 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:53:27.816 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:53:27.817 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 36_epoch
+2022-04-30 07:53:27.843 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:53:27.844 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:53:27.844 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:54:01.252 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:54:01.253 | INFO     | solver:test:310 - carrier loss: 0.00013330444789608008
+2022-04-30 07:54:01.254 | INFO     | solver:test:311 - carrier SnR: 22.192115783691406
+2022-04-30 07:54:01.254 | INFO     | solver:test:312 - message loss: 0.0006418913403758779
+2022-04-30 07:54:01.255 | INFO     | solver:test:313 - message SnR: 118.89600372314453
+2022-04-30 07:54:01.385 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:56:33.261 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:56:33.262 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 37_epoch
+2022-04-30 07:56:33.290 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:56:33.291 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:56:33.291 | INFO     | solver:test:291 - start testing...
+2022-04-30 07:57:06.683 | INFO     | solver:test:309 - finished testing!
+2022-04-30 07:57:06.684 | INFO     | solver:test:310 - carrier loss: 0.0001324839533190243
+2022-04-30 07:57:06.684 | INFO     | solver:test:311 - carrier SnR: 22.214448928833008
+2022-04-30 07:57:06.685 | INFO     | solver:test:312 - message loss: 0.0006601774611044675
+2022-04-30 07:57:06.685 | INFO     | solver:test:313 - message SnR: 117.127685546875
+2022-04-30 07:57:06.816 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 07:59:39.331 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:59:39.332 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 38_epoch
+2022-04-30 07:59:39.358 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 07:59:39.359 | INFO     | solver:test:288 - phase: validation
+2022-04-30 07:59:39.359 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:00:12.599 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:00:12.599 | INFO     | solver:test:310 - carrier loss: 0.0001236043960961979
+2022-04-30 08:00:12.600 | INFO     | solver:test:311 - carrier SnR: 22.517467498779297
+2022-04-30 08:00:12.601 | INFO     | solver:test:312 - message loss: 0.0006215441533131525
+2022-04-30 08:00:12.602 | INFO     | solver:test:313 - message SnR: 120.25698852539062
+2022-04-30 08:00:12.735 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:02:44.358 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:02:44.359 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 39_epoch
+2022-04-30 08:02:44.389 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:02:44.389 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:02:44.390 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:03:17.772 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:03:17.773 | INFO     | solver:test:310 - carrier loss: 0.00012169845702010207
+2022-04-30 08:03:17.774 | INFO     | solver:test:311 - carrier SnR: 22.583858489990234
+2022-04-30 08:03:17.774 | INFO     | solver:test:312 - message loss: 0.0006564676724374294
+2022-04-30 08:03:17.775 | INFO     | solver:test:313 - message SnR: 118.28121948242188
+2022-04-30 08:03:17.906 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:05:50.094 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:05:50.096 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 40_epoch
+2022-04-30 08:05:50.121 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:05:50.122 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:05:50.122 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:06:23.239 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:06:23.239 | INFO     | solver:test:310 - carrier loss: 0.00011812441525398754
+2022-04-30 08:06:23.240 | INFO     | solver:test:311 - carrier SnR: 22.713897705078125
+2022-04-30 08:06:23.241 | INFO     | solver:test:312 - message loss: 0.0005951286593917758
+2022-04-30 08:06:23.241 | INFO     | solver:test:313 - message SnR: 121.5677261352539
+2022-04-30 08:06:23.372 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:08:55.715 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:08:55.717 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 41_epoch
+2022-04-30 08:08:55.742 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:08:55.742 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:08:55.743 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:09:28.749 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:09:28.750 | INFO     | solver:test:310 - carrier loss: 0.00011886451934697106
+2022-04-30 08:09:28.751 | INFO     | solver:test:311 - carrier SnR: 22.684886932373047
+2022-04-30 08:09:28.751 | INFO     | solver:test:312 - message loss: 0.0005646900335559621
+2022-04-30 08:09:28.752 | INFO     | solver:test:313 - message SnR: 123.72985076904297
+2022-04-30 08:09:28.882 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:12:00.718 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:12:00.719 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 42_epoch
+2022-04-30 08:12:00.748 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:12:00.749 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:12:00.749 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:12:34.109 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:12:34.109 | INFO     | solver:test:310 - carrier loss: 0.0001103784451552201
+2022-04-30 08:12:34.110 | INFO     | solver:test:311 - carrier SnR: 23.0070858001709
+2022-04-30 08:12:34.110 | INFO     | solver:test:312 - message loss: 0.0005372852983418852
+2022-04-30 08:12:34.111 | INFO     | solver:test:313 - message SnR: 125.43051147460938
+2022-04-30 08:12:34.242 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:15:06.741 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:15:06.742 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 43_epoch
+2022-04-30 08:15:06.768 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:15:06.769 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:15:06.769 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:15:40.144 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:15:40.144 | INFO     | solver:test:310 - carrier loss: 0.00010791829694062471
+2022-04-30 08:15:40.145 | INFO     | solver:test:311 - carrier SnR: 23.101808547973633
+2022-04-30 08:15:40.146 | INFO     | solver:test:312 - message loss: 0.0005312645336380228
+2022-04-30 08:15:40.146 | INFO     | solver:test:313 - message SnR: 125.79224395751953
+2022-04-30 08:15:40.278 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:18:12.443 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:18:12.444 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 44_epoch
+2022-04-30 08:18:12.469 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:18:12.470 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:18:12.470 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:18:45.581 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:18:45.582 | INFO     | solver:test:310 - carrier loss: 0.00010633717087330297
+2022-04-30 08:18:45.583 | INFO     | solver:test:311 - carrier SnR: 23.159231185913086
+2022-04-30 08:18:45.583 | INFO     | solver:test:312 - message loss: 0.0005797403441974893
+2022-04-30 08:18:45.584 | INFO     | solver:test:313 - message SnR: 122.54566192626953
+2022-04-30 08:18:45.714 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:21:17.538 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:21:17.539 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 45_epoch
+2022-04-30 08:21:17.566 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:21:17.567 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:21:17.567 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:21:50.540 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:21:50.541 | INFO     | solver:test:310 - carrier loss: 0.00010239819847629405
+2022-04-30 08:21:50.542 | INFO     | solver:test:311 - carrier SnR: 23.332477569580078
+2022-04-30 08:21:50.542 | INFO     | solver:test:312 - message loss: 0.0005079217933816835
+2022-04-30 08:21:50.543 | INFO     | solver:test:313 - message SnR: 127.7427978515625
+2022-04-30 08:21:50.673 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:24:22.844 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:24:22.846 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 46_epoch
+2022-04-30 08:24:22.874 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:24:22.875 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:24:22.875 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:24:56.078 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:24:56.079 | INFO     | solver:test:310 - carrier loss: 0.00010155411309096962
+2022-04-30 08:24:56.079 | INFO     | solver:test:311 - carrier SnR: 23.36647605895996
+2022-04-30 08:24:56.080 | INFO     | solver:test:312 - message loss: 0.0005150419229175895
+2022-04-30 08:24:56.080 | INFO     | solver:test:313 - message SnR: 127.04926300048828
+2022-04-30 08:24:56.211 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:27:28.340 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:27:28.341 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 47_epoch
+2022-04-30 08:27:28.366 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:27:28.367 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:27:28.367 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:28:01.998 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:28:01.999 | INFO     | solver:test:310 - carrier loss: 0.0001014921029272955
+2022-04-30 08:28:02.000 | INFO     | solver:test:311 - carrier SnR: 23.37119483947754
+2022-04-30 08:28:02.000 | INFO     | solver:test:312 - message loss: 0.000524395961430855
+2022-04-30 08:28:02.001 | INFO     | solver:test:313 - message SnR: 126.19349670410156
+2022-04-30 08:28:02.131 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:30:34.153 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:30:34.154 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 48_epoch
+2022-04-30 08:30:34.179 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:30:34.179 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:30:34.180 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:31:07.643 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:31:07.644 | INFO     | solver:test:310 - carrier loss: 0.00010010799247538671
+2022-04-30 08:31:07.645 | INFO     | solver:test:311 - carrier SnR: 23.429378509521484
+2022-04-30 08:31:07.645 | INFO     | solver:test:312 - message loss: 0.0004929805573774501
+2022-04-30 08:31:07.646 | INFO     | solver:test:313 - message SnR: 128.7107391357422
+2022-04-30 08:31:07.777 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:33:39.805 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:33:39.807 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 49_epoch
+2022-04-30 08:33:39.845 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:33:39.846 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:33:39.846 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:34:13.028 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:34:13.028 | INFO     | solver:test:310 - carrier loss: 9.899508923990652e-05
+2022-04-30 08:34:13.029 | INFO     | solver:test:311 - carrier SnR: 23.474937438964844
+2022-04-30 08:34:13.030 | INFO     | solver:test:312 - message loss: 0.0005006839855341241
+2022-04-30 08:34:13.030 | INFO     | solver:test:313 - message SnR: 128.0604248046875
+2022-04-30 08:34:13.161 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:36:44.876 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:36:44.877 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 50_epoch
+2022-04-30 08:36:44.906 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:36:44.907 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:36:44.907 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:37:18.285 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:37:18.286 | INFO     | solver:test:310 - carrier loss: 9.720985684543848e-05
+2022-04-30 08:37:18.287 | INFO     | solver:test:311 - carrier SnR: 23.558168411254883
+2022-04-30 08:37:18.287 | INFO     | solver:test:312 - message loss: 0.00048381452448666097
+2022-04-30 08:37:18.288 | INFO     | solver:test:313 - message SnR: 129.30169677734375
+2022-04-30 08:37:18.419 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:39:50.610 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:39:50.611 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 51_epoch
+2022-04-30 08:39:50.637 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:39:50.637 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:39:50.637 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:40:23.948 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:40:23.948 | INFO     | solver:test:310 - carrier loss: 9.574055817211046e-05
+2022-04-30 08:40:23.949 | INFO     | solver:test:311 - carrier SnR: 23.62299919128418
+2022-04-30 08:40:23.950 | INFO     | solver:test:312 - message loss: 0.00047721991990692914
+2022-04-30 08:40:23.951 | INFO     | solver:test:313 - message SnR: 129.9281005859375
+2022-04-30 08:40:24.081 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:42:56.351 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:42:56.352 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 52_epoch
+2022-04-30 08:42:56.379 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:42:56.380 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:42:56.380 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:43:29.965 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:43:29.965 | INFO     | solver:test:310 - carrier loss: 9.546794657944701e-05
+2022-04-30 08:43:29.966 | INFO     | solver:test:311 - carrier SnR: 23.634193420410156
+2022-04-30 08:43:29.967 | INFO     | solver:test:312 - message loss: 0.00047940782411023974
+2022-04-30 08:43:29.968 | INFO     | solver:test:313 - message SnR: 129.72547912597656
+2022-04-30 08:43:30.098 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:46:02.486 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:46:02.487 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 53_epoch
+2022-04-30 08:46:02.523 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:46:02.523 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:46:02.524 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:46:35.972 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:46:35.973 | INFO     | solver:test:310 - carrier loss: 9.347050724318251e-05
+2022-04-30 08:46:35.974 | INFO     | solver:test:311 - carrier SnR: 23.728574752807617
+2022-04-30 08:46:35.974 | INFO     | solver:test:312 - message loss: 0.00046779319259803744
+2022-04-30 08:46:35.975 | INFO     | solver:test:313 - message SnR: 130.50669860839844
+2022-04-30 08:46:36.105 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:49:08.443 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:49:08.445 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 54_epoch
+2022-04-30 08:49:08.470 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:49:08.471 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:49:08.471 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:49:41.594 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:49:41.594 | INFO     | solver:test:310 - carrier loss: 9.696673633879982e-05
+2022-04-30 08:49:41.595 | INFO     | solver:test:311 - carrier SnR: 23.560062408447266
+2022-04-30 08:49:41.595 | INFO     | solver:test:312 - message loss: 0.00054240252985619
+2022-04-30 08:49:41.596 | INFO     | solver:test:313 - message SnR: 124.21881866455078
+2022-04-30 08:49:41.727 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:52:14.316 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:52:14.317 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 55_epoch
+2022-04-30 08:52:14.344 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:52:14.345 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:52:14.345 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:52:47.791 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:52:47.792 | INFO     | solver:test:310 - carrier loss: 9.200566163053736e-05
+2022-04-30 08:52:47.793 | INFO     | solver:test:311 - carrier SnR: 23.792814254760742
+2022-04-30 08:52:47.793 | INFO     | solver:test:312 - message loss: 0.0004933027214137837
+2022-04-30 08:52:47.794 | INFO     | solver:test:313 - message SnR: 128.503662109375
+2022-04-30 08:52:47.924 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:55:20.120 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:55:20.121 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 56_epoch
+2022-04-30 08:55:20.165 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:55:20.166 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:55:20.166 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:55:53.350 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:55:53.350 | INFO     | solver:test:310 - carrier loss: 9.56132513238117e-05
+2022-04-30 08:55:53.351 | INFO     | solver:test:311 - carrier SnR: 23.631099700927734
+2022-04-30 08:55:53.351 | INFO     | solver:test:312 - message loss: 0.00046063541201874614
+2022-04-30 08:55:53.352 | INFO     | solver:test:313 - message SnR: 131.02784729003906
+2022-04-30 08:55:53.484 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 08:58:25.635 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:58:25.637 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 57_epoch
+2022-04-30 08:58:25.662 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 08:58:25.662 | INFO     | solver:test:288 - phase: validation
+2022-04-30 08:58:25.663 | INFO     | solver:test:291 - start testing...
+2022-04-30 08:58:58.454 | INFO     | solver:test:309 - finished testing!
+2022-04-30 08:58:58.455 | INFO     | solver:test:310 - carrier loss: 9.006774361478165e-05
+2022-04-30 08:58:58.456 | INFO     | solver:test:311 - carrier SnR: 23.887481689453125
+2022-04-30 08:58:58.456 | INFO     | solver:test:312 - message loss: 0.0004638852730859071
+2022-04-30 08:58:58.457 | INFO     | solver:test:313 - message SnR: 130.70460510253906
+2022-04-30 08:58:58.587 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 09:01:30.487 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:01:30.488 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 58_epoch
+2022-04-30 09:01:30.514 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:01:30.514 | INFO     | solver:test:288 - phase: validation
+2022-04-30 09:01:30.514 | INFO     | solver:test:291 - start testing...
+2022-04-30 09:02:03.646 | INFO     | solver:test:309 - finished testing!
+2022-04-30 09:02:03.647 | INFO     | solver:test:310 - carrier loss: 9.000999719137326e-05
+2022-04-30 09:02:03.648 | INFO     | solver:test:311 - carrier SnR: 23.889245986938477
+2022-04-30 09:02:03.648 | INFO     | solver:test:312 - message loss: 0.0004433053567772731
+2022-04-30 09:02:03.649 | INFO     | solver:test:313 - message SnR: 132.4009246826172
+2022-04-30 09:02:03.779 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 09:04:35.758 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:04:35.759 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 59_epoch
+2022-04-30 09:04:35.800 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:04:35.801 | INFO     | solver:test:288 - phase: validation
+2022-04-30 09:04:35.801 | INFO     | solver:test:291 - start testing...
+2022-04-30 09:05:08.823 | INFO     | solver:test:309 - finished testing!
+2022-04-30 09:05:08.824 | INFO     | solver:test:310 - carrier loss: 8.831052581081167e-05
+2022-04-30 09:05:08.825 | INFO     | solver:test:311 - carrier SnR: 23.975202560424805
+2022-04-30 09:05:08.825 | INFO     | solver:test:312 - message loss: 0.00046280266635585575
+2022-04-30 09:05:08.826 | INFO     | solver:test:313 - message SnR: 130.17752075195312
+2022-04-30 09:05:08.956 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 09:07:41.283 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:07:41.284 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 60_epoch
+2022-04-30 09:07:41.312 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:07:41.312 | INFO     | solver:test:288 - phase: validation
+2022-04-30 09:07:41.313 | INFO     | solver:test:291 - start testing...
+2022-04-30 09:08:14.346 | INFO     | solver:test:309 - finished testing!
+2022-04-30 09:08:14.346 | INFO     | solver:test:310 - carrier loss: 8.803882903885097e-05
+2022-04-30 09:08:14.347 | INFO     | solver:test:311 - carrier SnR: 23.988014221191406
+2022-04-30 09:08:14.348 | INFO     | solver:test:312 - message loss: 0.00042505857034120706
+2022-04-30 09:08:14.348 | INFO     | solver:test:313 - message SnR: 134.1309356689453
+2022-04-30 09:08:14.479 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 09:10:46.412 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:10:46.413 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 61_epoch
+2022-04-30 09:10:46.438 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:10:46.439 | INFO     | solver:test:288 - phase: validation
+2022-04-30 09:10:46.439 | INFO     | solver:test:291 - start testing...
+2022-04-30 09:11:19.493 | INFO     | solver:test:309 - finished testing!
+2022-04-30 09:11:19.493 | INFO     | solver:test:310 - carrier loss: 8.849683598964475e-05
+2022-04-30 09:11:19.494 | INFO     | solver:test:311 - carrier SnR: 23.9623966217041
+2022-04-30 09:11:19.494 | INFO     | solver:test:312 - message loss: 0.00044934886624105276
+2022-04-30 09:11:19.495 | INFO     | solver:test:313 - message SnR: 131.60150146484375
+2022-04-30 09:11:19.625 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 09:13:51.916 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:13:51.918 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 62_epoch
+2022-04-30 09:13:51.946 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:13:51.947 | INFO     | solver:test:288 - phase: validation
+2022-04-30 09:13:51.947 | INFO     | solver:test:291 - start testing...
+2022-04-30 09:14:25.501 | INFO     | solver:test:309 - finished testing!
+2022-04-30 09:14:25.502 | INFO     | solver:test:310 - carrier loss: 8.364234678447246e-05
+2022-04-30 09:14:25.503 | INFO     | solver:test:311 - carrier SnR: 24.209848403930664
+2022-04-30 09:14:25.503 | INFO     | solver:test:312 - message loss: 0.0004174951961031184
+2022-04-30 09:14:25.504 | INFO     | solver:test:313 - message SnR: 134.6613006591797
+2022-04-30 09:14:25.635 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 09:16:59.160 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:16:59.161 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 63_epoch
+2022-04-30 09:16:59.187 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:16:59.188 | INFO     | solver:test:288 - phase: validation
+2022-04-30 09:16:59.188 | INFO     | solver:test:291 - start testing...
+2022-04-30 09:17:33.193 | INFO     | solver:test:309 - finished testing!
+2022-04-30 09:17:33.193 | INFO     | solver:test:310 - carrier loss: 8.272585252416321e-05
+2022-04-30 09:17:33.194 | INFO     | solver:test:311 - carrier SnR: 24.255401611328125
+2022-04-30 09:17:33.194 | INFO     | solver:test:312 - message loss: 0.0004266058020293713
+2022-04-30 09:17:33.195 | INFO     | solver:test:313 - message SnR: 133.8478240966797
+2022-04-30 09:17:33.325 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 09:20:05.039 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:20:05.041 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 64_epoch
+2022-04-30 09:20:05.081 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:20:05.082 | INFO     | solver:test:288 - phase: validation
+2022-04-30 09:20:05.082 | INFO     | solver:test:291 - start testing...
+2022-04-30 09:20:38.073 | INFO     | solver:test:309 - finished testing!
+2022-04-30 09:20:38.073 | INFO     | solver:test:310 - carrier loss: 8.152472577057779e-05
+2022-04-30 09:20:38.074 | INFO     | solver:test:311 - carrier SnR: 24.32044792175293
+2022-04-30 09:20:38.074 | INFO     | solver:test:312 - message loss: 0.0004242696543224156
+2022-04-30 09:20:38.075 | INFO     | solver:test:313 - message SnR: 134.004638671875
+2022-04-30 09:20:38.206 | DEBUG    | solver:train_mode:169 - train mode
+2022-04-30 09:23:10.014 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:23:10.015 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/drive/MyDrive/Project_DL/HideAndSeek-7/ckpt
+==> suffix: 65_epoch
+2022-04-30 09:23:10.048 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-04-30 09:23:10.048 | INFO     | solver:test:288 - phase: validation
+2022-04-30 09:23:10.049 | INFO     | solver:test:291 - start testing...
+2022-04-30 09:23:42.979 | INFO     | solver:test:309 - finished testing!
+2022-04-30 09:23:42.980 | INFO     | solver:test:310 - carrier loss: 8.121200007735752e-05
+2022-04-30 09:23:42.981 | INFO     | solver:test:311 - carrier SnR: 24.33717155456543
+2022-04-30 09:23:42.981 | INFO     | solver:test:312 - message loss: 0.00041614165843930094
+2022-04-30 09:23:42.982 | INFO     | solver:test:313 - message SnR: 134.89285278320312
+2022-04-30 09:23:43.112 | DEBUG    | solver:train_mode:169 - train mode
