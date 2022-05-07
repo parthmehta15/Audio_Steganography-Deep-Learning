@@ -1,0 +1,801 @@
+2022-05-02 15:38:36.362 | INFO     | solver_n_msg_deepsteg:__init__:18 - running multiple decoders solver!
+2022-05-02 15:38:40.664 | DEBUG    | solver_n_msg_deepsteg:__init__:47 - DataParallel(
+  (module): Encoder(
+    (main): Sequential(
+      (0): GatedBlock(
+        (conv): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+)
+2022-05-02 15:38:40.665 | DEBUG    | solver_n_msg_deepsteg:__init__:48 - DataParallel(
+  (module): CarrierDecoder(
+    (main): Sequential(
+      (0): GatedBlock(
+        (conv): Conv2d(72, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(72, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (3): GatedBlock(
+        (conv): Conv2d(64, 2, kernel_size=(1, 1), stride=(1, 1))
+        (gate): Conv2d(64, 2, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+  )
+)
+2022-05-02 15:38:40.665 | DEBUG    | solver_n_msg_deepsteg:__init__:49 - [DataParallel(
+  (module): MsgDecoder(
+    (main): Sequential(
+      (0): GatedBlock(
+        (conv): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (3): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (4): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (5): GatedBlock(
+        (conv): Conv2d(64, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+), DataParallel(
+  (module): MsgDecoder(
+    (main): Sequential(
+      (0): GatedBlock(
+        (conv): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (3): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (4): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (5): GatedBlock(
+        (conv): Conv2d(64, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+), DataParallel(
+  (module): MsgDecoder(
+    (main): Sequential(
+      (0): GatedBlock(
+        (conv): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (3): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (4): GatedBlock(
+        (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (5): GatedBlock(
+        (conv): Conv2d(64, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (gate): Conv2d(64, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+)]
+2022-05-02 15:38:40.666 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:38:40.666 | INFO     | solver:train:191 - start training...
+2022-05-02 15:38:40.668 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:39:12.377 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:39:12.378 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 1_epoch
+2022-05-02 15:39:12.395 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:39:12.396 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:39:12.396 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:39:21.500 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:39:21.501 | INFO     | solver:test:318 - carrier loss: 0.00019552030698832823
+2022-05-02 15:39:21.501 | INFO     | solver:test:319 - carrier SnR: 22.508377075195312
+2022-05-02 15:39:21.501 | INFO     | solver:test:320 - message loss: 0.03759124238664905
+2022-05-02 15:39:21.501 | INFO     | solver:test:321 - message SnR: -3.111767000518739e-05
+2022-05-02 15:39:21.505 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:39:51.590 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:39:51.591 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 2_epoch
+2022-05-02 15:39:51.609 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:39:51.609 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:39:51.609 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:40:00.813 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:40:00.814 | INFO     | solver:test:318 - carrier loss: 7.774815071570629e-05
+2022-05-02 15:40:00.814 | INFO     | solver:test:319 - carrier SnR: 26.496856689453125
+2022-05-02 15:40:00.814 | INFO     | solver:test:320 - message loss: 0.037591310528417424
+2022-05-02 15:40:00.814 | INFO     | solver:test:321 - message SnR: -3.880945223500021e-05
+2022-05-02 15:40:00.818 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:40:31.161 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:40:31.162 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 3_epoch
+2022-05-02 15:40:31.179 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:40:31.180 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:40:31.180 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:40:40.469 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:40:40.469 | INFO     | solver:test:318 - carrier loss: 5.648112573908293e-05
+2022-05-02 15:40:40.470 | INFO     | solver:test:319 - carrier SnR: 27.883054733276367
+2022-05-02 15:40:40.470 | INFO     | solver:test:320 - message loss: 0.037591206996391215
+2022-05-02 15:40:40.471 | INFO     | solver:test:321 - message SnR: -2.6956075089401565e-05
+2022-05-02 15:40:40.474 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:41:10.671 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:41:10.673 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 4_epoch
+2022-05-02 15:41:10.690 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:41:10.691 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:41:10.691 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:41:20.047 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:41:20.048 | INFO     | solver:test:318 - carrier loss: 4.492989137361292e-05
+2022-05-02 15:41:20.049 | INFO     | solver:test:319 - carrier SnR: 28.871234893798828
+2022-05-02 15:41:20.049 | INFO     | solver:test:320 - message loss: 0.03759199442962806
+2022-05-02 15:41:20.049 | INFO     | solver:test:321 - message SnR: -0.0001274304377147928
+2022-05-02 15:41:20.052 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:41:50.179 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:41:50.180 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 5_epoch
+2022-05-02 15:41:50.198 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:41:50.199 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:41:50.199 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:41:59.516 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:41:59.516 | INFO     | solver:test:318 - carrier loss: 8.32523733151902e-05
+2022-05-02 15:41:59.517 | INFO     | solver:test:319 - carrier SnR: 26.088138580322266
+2022-05-02 15:41:59.517 | INFO     | solver:test:320 - message loss: 0.03759217696885269
+2022-05-02 15:41:59.517 | INFO     | solver:test:321 - message SnR: -0.00015300810628104955
+2022-05-02 15:41:59.521 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:42:29.582 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:42:29.584 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 6_epoch
+2022-05-02 15:42:29.601 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:42:29.602 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:42:29.602 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:42:38.873 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:42:38.873 | INFO     | solver:test:318 - carrier loss: 3.873517391639325e-05
+2022-05-02 15:42:38.874 | INFO     | solver:test:319 - carrier SnR: 29.489978790283203
+2022-05-02 15:42:38.874 | INFO     | solver:test:320 - message loss: 0.03759177572404346
+2022-05-02 15:42:38.874 | INFO     | solver:test:321 - message SnR: -0.00011447387805674225
+2022-05-02 15:42:38.878 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:43:09.036 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:43:09.037 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 7_epoch
+2022-05-02 15:43:09.054 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:43:09.055 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:43:09.055 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:43:18.029 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:43:18.030 | INFO     | solver:test:318 - carrier loss: 5.483689301399863e-05
+2022-05-02 15:43:18.030 | INFO     | solver:test:319 - carrier SnR: 27.964679718017578
+2022-05-02 15:43:18.030 | INFO     | solver:test:320 - message loss: 0.037592510227113955
+2022-05-02 15:43:18.031 | INFO     | solver:test:321 - message SnR: -0.00021488209313247353
+2022-05-02 15:43:18.034 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:43:48.326 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:43:48.327 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 8_epoch
+2022-05-02 15:43:48.344 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:43:48.345 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:43:48.345 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:43:57.519 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:43:57.519 | INFO     | solver:test:318 - carrier loss: 3.724005739513814e-05
+2022-05-02 15:43:57.520 | INFO     | solver:test:319 - carrier SnR: 29.630760192871094
+2022-05-02 15:43:57.520 | INFO     | solver:test:320 - message loss: 0.03759335664411386
+2022-05-02 15:43:57.520 | INFO     | solver:test:321 - message SnR: -0.00032556153018958867
+2022-05-02 15:43:57.523 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:44:28.021 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:44:28.022 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 9_epoch
+2022-05-02 15:44:28.040 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:44:28.040 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:44:28.040 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:44:36.617 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:44:36.617 | INFO     | solver:test:318 - carrier loss: 0.0002698127682378981
+2022-05-02 15:44:36.617 | INFO     | solver:test:319 - carrier SnR: 21.10512924194336
+2022-05-02 15:44:36.618 | INFO     | solver:test:320 - message loss: 0.03720622959857185
+2022-05-02 15:44:36.618 | INFO     | solver:test:321 - message SnR: 0.03889179974794388
+2022-05-02 15:44:36.621 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:45:06.924 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:45:06.925 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 10_epoch
+2022-05-02 15:45:06.945 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:45:06.945 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:45:06.945 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:45:15.954 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:45:15.954 | INFO     | solver:test:318 - carrier loss: 0.0014529418549500406
+2022-05-02 15:45:15.954 | INFO     | solver:test:319 - carrier SnR: 13.71768569946289
+2022-05-02 15:45:15.955 | INFO     | solver:test:320 - message loss: 0.03116325351099173
+2022-05-02 15:45:15.955 | INFO     | solver:test:321 - message SnR: 0.9067239761352539
+2022-05-02 15:45:15.958 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:45:46.195 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:45:46.195 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 11_epoch
+2022-05-02 15:45:46.213 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:45:46.214 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:45:46.214 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:45:55.261 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:45:55.262 | INFO     | solver:test:318 - carrier loss: 0.0015923929968266748
+2022-05-02 15:45:55.262 | INFO     | solver:test:319 - carrier SnR: 13.318714141845703
+2022-05-02 15:45:55.262 | INFO     | solver:test:320 - message loss: 0.028797848150134087
+2022-05-02 15:45:55.262 | INFO     | solver:test:321 - message SnR: 1.4852533340454102
+2022-05-02 15:45:55.266 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:46:25.473 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:46:25.474 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 12_epoch
+2022-05-02 15:46:25.492 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:46:25.493 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:46:25.493 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:46:34.592 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:46:34.592 | INFO     | solver:test:318 - carrier loss: 0.001518728691735305
+2022-05-02 15:46:34.593 | INFO     | solver:test:319 - carrier SnR: 13.5222749710083
+2022-05-02 15:46:34.593 | INFO     | solver:test:320 - message loss: 0.028042898823817573
+2022-05-02 15:46:34.593 | INFO     | solver:test:321 - message SnR: 1.7333276271820068
+2022-05-02 15:46:34.597 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:47:04.760 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:47:04.761 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 13_epoch
+2022-05-02 15:47:04.778 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:47:04.779 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:47:04.779 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:47:14.116 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:47:14.117 | INFO     | solver:test:318 - carrier loss: 0.0014401854823518079
+2022-05-02 15:47:14.117 | INFO     | solver:test:319 - carrier SnR: 13.74812126159668
+2022-05-02 15:47:14.118 | INFO     | solver:test:320 - message loss: 0.027846868305156633
+2022-05-02 15:47:14.118 | INFO     | solver:test:321 - message SnR: 1.808202862739563
+2022-05-02 15:47:14.121 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:47:44.133 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:47:44.134 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 14_epoch
+2022-05-02 15:47:44.151 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:47:44.152 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:47:44.152 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:47:53.339 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:47:53.339 | INFO     | solver:test:318 - carrier loss: 0.0013801985078316648
+2022-05-02 15:47:53.340 | INFO     | solver:test:319 - carrier SnR: 13.947589874267578
+2022-05-02 15:47:53.340 | INFO     | solver:test:320 - message loss: 0.02727518028890093
+2022-05-02 15:47:53.340 | INFO     | solver:test:321 - message SnR: 2.0429654121398926
+2022-05-02 15:47:53.344 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:48:23.628 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:48:23.629 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 15_epoch
+2022-05-02 15:48:23.647 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:48:23.647 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:48:23.647 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:48:32.927 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:48:32.928 | INFO     | solver:test:318 - carrier loss: 0.0012822197932109702
+2022-05-02 15:48:32.928 | INFO     | solver:test:319 - carrier SnR: 14.267019271850586
+2022-05-02 15:48:32.928 | INFO     | solver:test:320 - message loss: 0.02715691675742467
+2022-05-02 15:48:32.928 | INFO     | solver:test:321 - message SnR: 2.100018262863159
+2022-05-02 15:48:32.932 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:49:03.061 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:49:03.062 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 16_epoch
+2022-05-02 15:49:03.083 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:49:03.084 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:49:03.084 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:49:12.478 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:49:12.479 | INFO     | solver:test:318 - carrier loss: 0.0013530214891943615
+2022-05-02 15:49:12.479 | INFO     | solver:test:319 - carrier SnR: 14.032880783081055
+2022-05-02 15:49:12.479 | INFO     | solver:test:320 - message loss: 0.026977858506143097
+2022-05-02 15:49:12.480 | INFO     | solver:test:321 - message SnR: 2.1848511695861816
+2022-05-02 15:49:12.483 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:49:42.711 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:49:42.712 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 17_epoch
+2022-05-02 15:49:42.730 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:49:42.730 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:49:42.730 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:49:51.911 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:49:51.911 | INFO     | solver:test:318 - carrier loss: 0.0012471734517021105
+2022-05-02 15:49:51.912 | INFO     | solver:test:319 - carrier SnR: 14.396509170532227
+2022-05-02 15:49:51.912 | INFO     | solver:test:320 - message loss: 0.026879231445491314
+2022-05-02 15:49:51.912 | INFO     | solver:test:321 - message SnR: 2.2339563369750977
+2022-05-02 15:49:51.916 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:50:22.231 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:50:22.232 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 18_epoch
+2022-05-02 15:50:22.251 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:50:22.251 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:50:22.251 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:50:31.602 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:50:31.602 | INFO     | solver:test:318 - carrier loss: 0.001204177056933986
+2022-05-02 15:50:31.603 | INFO     | solver:test:319 - carrier SnR: 14.547774314880371
+2022-05-02 15:50:31.603 | INFO     | solver:test:320 - message loss: 0.026861989560226597
+2022-05-02 15:50:31.603 | INFO     | solver:test:321 - message SnR: 2.24851655960083
+2022-05-02 15:50:31.607 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:51:01.751 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:51:01.752 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 19_epoch
+2022-05-02 15:51:01.769 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:51:01.770 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:51:01.770 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:51:11.058 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:51:11.058 | INFO     | solver:test:318 - carrier loss: 0.0012033425809931941
+2022-05-02 15:51:11.059 | INFO     | solver:test:319 - carrier SnR: 14.547481536865234
+2022-05-02 15:51:11.059 | INFO     | solver:test:320 - message loss: 0.02682364002491037
+2022-05-02 15:51:11.059 | INFO     | solver:test:321 - message SnR: 2.269754409790039
+2022-05-02 15:51:11.063 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:51:40.623 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:51:40.624 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 20_epoch
+2022-05-02 15:51:40.642 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:51:40.643 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:51:40.643 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:51:49.771 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:51:49.771 | INFO     | solver:test:318 - carrier loss: 0.0011757950742321555
+2022-05-02 15:51:49.772 | INFO     | solver:test:319 - carrier SnR: 14.647773742675781
+2022-05-02 15:51:49.772 | INFO     | solver:test:320 - message loss: 0.026793451358874638
+2022-05-02 15:51:49.772 | INFO     | solver:test:321 - message SnR: 2.281489372253418
+2022-05-02 15:51:49.775 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:52:19.971 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:52:19.972 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 21_epoch
+2022-05-02 15:52:19.990 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:52:19.990 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:52:19.990 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:52:28.733 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:52:28.733 | INFO     | solver:test:318 - carrier loss: 0.0011180145738762803
+2022-05-02 15:52:28.734 | INFO     | solver:test:319 - carrier SnR: 14.869811058044434
+2022-05-02 15:52:28.734 | INFO     | solver:test:320 - message loss: 0.026723254006356004
+2022-05-02 15:52:28.734 | INFO     | solver:test:321 - message SnR: 2.3232572078704834
+2022-05-02 15:52:28.737 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:52:58.940 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:52:58.941 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 22_epoch
+2022-05-02 15:52:58.959 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:52:58.959 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:52:58.959 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:53:08.087 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:53:08.087 | INFO     | solver:test:318 - carrier loss: 0.0010928357696684543
+2022-05-02 15:53:08.088 | INFO     | solver:test:319 - carrier SnR: 14.969711303710938
+2022-05-02 15:53:08.088 | INFO     | solver:test:320 - message loss: 0.026705890738715727
+2022-05-02 15:53:08.088 | INFO     | solver:test:321 - message SnR: 2.3342959880828857
+2022-05-02 15:53:08.092 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:53:38.183 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:53:38.185 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 23_epoch
+2022-05-02 15:53:38.203 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:53:38.204 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:53:38.204 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:53:47.132 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:53:47.133 | INFO     | solver:test:318 - carrier loss: 0.001081307855201885
+2022-05-02 15:53:47.133 | INFO     | solver:test:319 - carrier SnR: 15.01694107055664
+2022-05-02 15:53:47.133 | INFO     | solver:test:320 - message loss: 0.02671334768335025
+2022-05-02 15:53:47.134 | INFO     | solver:test:321 - message SnR: 2.331204652786255
+2022-05-02 15:53:47.137 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:54:16.638 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:54:16.639 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 24_epoch
+2022-05-02 15:54:16.657 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:54:16.657 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:54:16.658 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:54:25.872 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:54:25.872 | INFO     | solver:test:318 - carrier loss: 0.0010788160434458405
+2022-05-02 15:54:25.873 | INFO     | solver:test:319 - carrier SnR: 15.025949478149414
+2022-05-02 15:54:25.873 | INFO     | solver:test:320 - message loss: 0.02669436406965057
+2022-05-02 15:54:25.873 | INFO     | solver:test:321 - message SnR: 2.3447582721710205
+2022-05-02 15:54:25.876 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:54:56.022 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:54:56.024 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 25_epoch
+2022-05-02 15:54:56.041 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:54:56.042 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:54:56.042 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:55:05.216 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:55:05.216 | INFO     | solver:test:318 - carrier loss: 0.0010701940409489907
+2022-05-02 15:55:05.216 | INFO     | solver:test:319 - carrier SnR: 15.060710906982422
+2022-05-02 15:55:05.217 | INFO     | solver:test:320 - message loss: 0.02669693203642964
+2022-05-02 15:55:05.217 | INFO     | solver:test:321 - message SnR: 2.3502421379089355
+2022-05-02 15:55:05.220 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:55:35.261 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:55:35.262 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 26_epoch
+2022-05-02 15:55:35.281 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:55:35.282 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:55:35.282 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:55:44.191 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:55:44.192 | INFO     | solver:test:318 - carrier loss: 0.0010803763470903505
+2022-05-02 15:55:44.192 | INFO     | solver:test:319 - carrier SnR: 15.01883316040039
+2022-05-02 15:55:44.193 | INFO     | solver:test:320 - message loss: 0.026719291228801012
+2022-05-02 15:55:44.193 | INFO     | solver:test:321 - message SnR: 2.3403635025024414
+2022-05-02 15:55:44.196 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:56:14.554 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:56:14.555 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 27_epoch
+2022-05-02 15:56:14.575 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:56:14.576 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:56:14.576 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:56:23.644 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:56:23.645 | INFO     | solver:test:318 - carrier loss: 0.0010654724828782491
+2022-05-02 15:56:23.645 | INFO     | solver:test:319 - carrier SnR: 15.078702926635742
+2022-05-02 15:56:23.645 | INFO     | solver:test:320 - message loss: 0.02668409577260415
+2022-05-02 15:56:23.645 | INFO     | solver:test:321 - message SnR: 2.357311964035034
+2022-05-02 15:56:23.649 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:56:53.777 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:56:53.778 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 28_epoch
+2022-05-02 15:56:53.796 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:56:53.796 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:56:53.796 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:57:02.902 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:57:02.903 | INFO     | solver:test:318 - carrier loss: 0.00107263301833882
+2022-05-02 15:57:02.903 | INFO     | solver:test:319 - carrier SnR: 15.048067092895508
+2022-05-02 15:57:02.903 | INFO     | solver:test:320 - message loss: 0.026654823993643127
+2022-05-02 15:57:02.903 | INFO     | solver:test:321 - message SnR: 2.3762431144714355
+2022-05-02 15:57:02.907 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:57:33.095 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:57:33.096 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 29_epoch
+2022-05-02 15:57:33.113 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:57:33.114 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:57:33.114 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:57:42.244 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:57:42.244 | INFO     | solver:test:318 - carrier loss: 0.0010392696822236758
+2022-05-02 15:57:42.245 | INFO     | solver:test:319 - carrier SnR: 15.188081741333008
+2022-05-02 15:57:42.245 | INFO     | solver:test:320 - message loss: 0.026667344849556688
+2022-05-02 15:57:42.245 | INFO     | solver:test:321 - message SnR: 2.3710060119628906
+2022-05-02 15:57:42.249 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:58:12.186 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:58:12.187 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 30_epoch
+2022-05-02 15:58:12.205 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:58:12.205 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:58:12.205 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:58:21.599 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:58:21.599 | INFO     | solver:test:318 - carrier loss: 0.0010199006610491779
+2022-05-02 15:58:21.600 | INFO     | solver:test:319 - carrier SnR: 15.269309997558594
+2022-05-02 15:58:21.600 | INFO     | solver:test:320 - message loss: 0.026689335082968075
+2022-05-02 15:58:21.600 | INFO     | solver:test:321 - message SnR: 2.36081862449646
+2022-05-02 15:58:21.603 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:58:51.907 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:58:51.908 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 31_epoch
+2022-05-02 15:58:51.925 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:58:51.926 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:58:51.926 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:59:01.303 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:59:01.304 | INFO     | solver:test:318 - carrier loss: 0.00104143322823802
+2022-05-02 15:59:01.304 | INFO     | solver:test:319 - carrier SnR: 15.176004409790039
+2022-05-02 15:59:01.305 | INFO     | solver:test:320 - message loss: 0.026640063462158043
+2022-05-02 15:59:01.305 | INFO     | solver:test:321 - message SnR: 2.3827338218688965
+2022-05-02 15:59:01.308 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 15:59:31.513 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:59:31.514 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 32_epoch
+2022-05-02 15:59:31.533 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 15:59:31.534 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 15:59:31.534 | INFO     | solver:test:295 - start testing...
+2022-05-02 15:59:40.522 | INFO     | solver:test:317 - finished testing!
+2022-05-02 15:59:40.523 | INFO     | solver:test:318 - carrier loss: 0.0010252411993860733
+2022-05-02 15:59:40.523 | INFO     | solver:test:319 - carrier SnR: 15.244423866271973
+2022-05-02 15:59:40.524 | INFO     | solver:test:320 - message loss: 0.02667935953165093
+2022-05-02 15:59:40.524 | INFO     | solver:test:321 - message SnR: 2.371685028076172
+2022-05-02 15:59:40.527 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:00:10.602 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:00:10.603 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 33_epoch
+2022-05-02 16:00:10.620 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:00:10.621 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:00:10.621 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:00:19.811 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:00:19.811 | INFO     | solver:test:318 - carrier loss: 0.0010356100574426819
+2022-05-02 16:00:19.811 | INFO     | solver:test:319 - carrier SnR: 15.20055103302002
+2022-05-02 16:00:19.812 | INFO     | solver:test:320 - message loss: 0.02665168947229783
+2022-05-02 16:00:19.812 | INFO     | solver:test:321 - message SnR: 2.3789806365966797
+2022-05-02 16:00:19.815 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:00:50.081 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:00:50.082 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 34_epoch
+2022-05-02 16:00:50.099 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:00:50.099 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:00:50.100 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:00:58.511 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:00:58.511 | INFO     | solver:test:318 - carrier loss: 0.0010410620307084173
+2022-05-02 16:00:58.511 | INFO     | solver:test:319 - carrier SnR: 15.174062728881836
+2022-05-02 16:00:58.512 | INFO     | solver:test:320 - message loss: 0.02663335297256708
+2022-05-02 16:00:58.512 | INFO     | solver:test:321 - message SnR: 2.3938467502593994
+2022-05-02 16:00:58.515 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:01:28.526 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:01:28.527 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 35_epoch
+2022-05-02 16:01:28.544 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:01:28.545 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:01:28.545 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:01:37.675 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:01:37.675 | INFO     | solver:test:318 - carrier loss: 0.0010088887138408609
+2022-05-02 16:01:37.676 | INFO     | solver:test:319 - carrier SnR: 15.310796737670898
+2022-05-02 16:01:37.676 | INFO     | solver:test:320 - message loss: 0.026689502876251932
+2022-05-02 16:01:37.676 | INFO     | solver:test:321 - message SnR: 2.383230686187744
+2022-05-02 16:01:37.680 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:02:07.840 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:02:07.842 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 36_epoch
+2022-05-02 16:02:07.859 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:02:07.860 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:02:07.860 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:02:16.895 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:02:16.895 | INFO     | solver:test:318 - carrier loss: 0.0010037937099696137
+2022-05-02 16:02:16.896 | INFO     | solver:test:319 - carrier SnR: 15.329208374023438
+2022-05-02 16:02:16.896 | INFO     | solver:test:320 - message loss: 0.026670858263969418
+2022-05-02 16:02:16.896 | INFO     | solver:test:321 - message SnR: 2.3655056953430176
+2022-05-02 16:02:16.899 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:02:47.096 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:02:47.097 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 37_epoch
+2022-05-02 16:02:47.114 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:02:47.115 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:02:47.115 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:02:56.495 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:02:56.495 | INFO     | solver:test:318 - carrier loss: 0.0009993360581574962
+2022-05-02 16:02:56.495 | INFO     | solver:test:319 - carrier SnR: 15.355660438537598
+2022-05-02 16:02:56.496 | INFO     | solver:test:320 - message loss: 0.02667942550033331
+2022-05-02 16:02:56.496 | INFO     | solver:test:321 - message SnR: 2.3790674209594727
+2022-05-02 16:02:56.499 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:03:27.026 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:03:27.027 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 38_epoch
+2022-05-02 16:03:27.046 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:03:27.047 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:03:27.047 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:03:36.188 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:03:36.189 | INFO     | solver:test:318 - carrier loss: 0.0009985311698983423
+2022-05-02 16:03:36.189 | INFO     | solver:test:319 - carrier SnR: 15.355847358703613
+2022-05-02 16:03:36.189 | INFO     | solver:test:320 - message loss: 0.02665922977030277
+2022-05-02 16:03:36.189 | INFO     | solver:test:321 - message SnR: 2.397732734680176
+2022-05-02 16:03:36.193 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:04:06.463 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:04:06.465 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 39_epoch
+2022-05-02 16:04:06.482 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:04:06.482 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:04:06.482 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:04:15.664 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:04:15.664 | INFO     | solver:test:318 - carrier loss: 0.0009801371197681874
+2022-05-02 16:04:15.665 | INFO     | solver:test:319 - carrier SnR: 15.438241958618164
+2022-05-02 16:04:15.665 | INFO     | solver:test:320 - message loss: 0.02668700988094012
+2022-05-02 16:04:15.665 | INFO     | solver:test:321 - message SnR: 2.3790335655212402
+2022-05-02 16:04:15.669 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:04:45.981 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:04:45.982 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 40_epoch
+2022-05-02 16:04:46.000 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:04:46.000 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:04:46.000 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:04:55.482 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:04:55.483 | INFO     | solver:test:318 - carrier loss: 0.0009971863655664492
+2022-05-02 16:04:55.483 | INFO     | solver:test:319 - carrier SnR: 15.362944602966309
+2022-05-02 16:04:55.483 | INFO     | solver:test:320 - message loss: 0.02667776076123118
+2022-05-02 16:04:55.484 | INFO     | solver:test:321 - message SnR: 2.377948045730591
+2022-05-02 16:04:55.487 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:05:25.599 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:05:25.600 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 41_epoch
+2022-05-02 16:05:25.617 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:05:25.617 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:05:25.618 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:05:34.724 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:05:34.724 | INFO     | solver:test:318 - carrier loss: 0.000958179502049461
+2022-05-02 16:05:34.725 | INFO     | solver:test:319 - carrier SnR: 15.537604331970215
+2022-05-02 16:05:34.725 | INFO     | solver:test:320 - message loss: 0.026669356195876993
+2022-05-02 16:05:34.725 | INFO     | solver:test:321 - message SnR: 2.393622398376465
+2022-05-02 16:05:34.729 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:06:05.204 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:06:05.205 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 42_epoch
+2022-05-02 16:06:05.224 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:06:05.224 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:06:05.225 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:06:14.239 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:06:14.240 | INFO     | solver:test:318 - carrier loss: 0.000966837029409362
+2022-05-02 16:06:14.244 | INFO     | solver:test:319 - carrier SnR: 15.499640464782715
+2022-05-02 16:06:14.244 | INFO     | solver:test:320 - message loss: 0.026693138138701517
+2022-05-02 16:06:14.244 | INFO     | solver:test:321 - message SnR: 2.3838236331939697
+2022-05-02 16:06:14.248 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:06:44.409 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:06:44.410 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 43_epoch
+2022-05-02 16:06:44.427 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:06:44.427 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:06:44.428 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:06:53.710 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:06:53.711 | INFO     | solver:test:318 - carrier loss: 0.0009525444256723858
+2022-05-02 16:06:53.711 | INFO     | solver:test:319 - carrier SnR: 15.564506530761719
+2022-05-02 16:06:53.711 | INFO     | solver:test:320 - message loss: 0.02667866414412856
+2022-05-02 16:06:53.712 | INFO     | solver:test:321 - message SnR: 2.3850841522216797
+2022-05-02 16:06:53.715 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:07:23.926 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:07:23.927 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 44_epoch
+2022-05-02 16:07:23.945 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:07:23.945 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:07:23.945 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:07:33.199 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:07:33.200 | INFO     | solver:test:318 - carrier loss: 0.0009342155462945811
+2022-05-02 16:07:33.200 | INFO     | solver:test:319 - carrier SnR: 15.647910118103027
+2022-05-02 16:07:33.201 | INFO     | solver:test:320 - message loss: 0.026771614948908486
+2022-05-02 16:07:33.201 | INFO     | solver:test:321 - message SnR: 2.3542492389678955
+2022-05-02 16:07:33.204 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:08:03.521 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:08:03.522 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 45_epoch
+2022-05-02 16:08:03.539 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:08:03.540 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:08:03.540 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:08:12.929 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:08:12.929 | INFO     | solver:test:318 - carrier loss: 0.0009319542295997962
+2022-05-02 16:08:12.930 | INFO     | solver:test:319 - carrier SnR: 15.660144805908203
+2022-05-02 16:08:12.930 | INFO     | solver:test:320 - message loss: 0.026734779899319012
+2022-05-02 16:08:12.930 | INFO     | solver:test:321 - message SnR: 2.368738889694214
+2022-05-02 16:08:12.934 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:08:43.182 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:08:43.183 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 46_epoch
+2022-05-02 16:08:43.202 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:08:43.202 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:08:43.202 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:08:52.089 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:08:52.089 | INFO     | solver:test:318 - carrier loss: 0.0009447571392229293
+2022-05-02 16:08:52.090 | INFO     | solver:test:319 - carrier SnR: 15.597954750061035
+2022-05-02 16:08:52.090 | INFO     | solver:test:320 - message loss: 0.026730424414078392
+2022-05-02 16:08:52.090 | INFO     | solver:test:321 - message SnR: 2.3797810077667236
+2022-05-02 16:08:52.094 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:09:21.939 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:09:21.940 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 47_epoch
+2022-05-02 16:09:21.958 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:09:21.958 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:09:21.958 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:09:30.850 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:09:30.850 | INFO     | solver:test:318 - carrier loss: 0.0009469375472690444
+2022-05-02 16:09:30.851 | INFO     | solver:test:319 - carrier SnR: 15.58775806427002
+2022-05-02 16:09:30.851 | INFO     | solver:test:320 - message loss: 0.026721304903427757
+2022-05-02 16:09:30.851 | INFO     | solver:test:321 - message SnR: 2.3901453018188477
+2022-05-02 16:09:30.855 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:10:01.235 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:10:01.236 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 48_epoch
+2022-05-02 16:10:01.254 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:10:01.255 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:10:01.255 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:10:10.554 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:10:10.554 | INFO     | solver:test:318 - carrier loss: 0.0009255948061763775
+2022-05-02 16:10:10.555 | INFO     | solver:test:319 - carrier SnR: 15.688638687133789
+2022-05-02 16:10:10.555 | INFO     | solver:test:320 - message loss: 0.026741989267369107
+2022-05-02 16:10:10.555 | INFO     | solver:test:321 - message SnR: 2.3670361042022705
+2022-05-02 16:10:10.558 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:10:40.711 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:10:40.712 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 49_epoch
+2022-05-02 16:10:40.730 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:10:40.730 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:10:40.731 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:10:49.798 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:10:49.798 | INFO     | solver:test:318 - carrier loss: 0.0009307913678640034
+2022-05-02 16:10:49.799 | INFO     | solver:test:319 - carrier SnR: 15.666433334350586
+2022-05-02 16:10:49.799 | INFO     | solver:test:320 - message loss: 0.02673822408542037
+2022-05-02 16:10:49.799 | INFO     | solver:test:321 - message SnR: 2.371896266937256
+2022-05-02 16:10:49.803 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:11:20.158 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:11:20.159 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 50_epoch
+2022-05-02 16:11:20.177 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:11:20.178 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:11:20.178 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:11:29.252 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:11:29.253 | INFO     | solver:test:318 - carrier loss: 0.0009301738427893724
+2022-05-02 16:11:29.253 | INFO     | solver:test:319 - carrier SnR: 15.668817520141602
+2022-05-02 16:11:29.254 | INFO     | solver:test:320 - message loss: 0.026756783016026017
+2022-05-02 16:11:29.254 | INFO     | solver:test:321 - message SnR: 2.373469829559326
+2022-05-02 16:11:29.257 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:11:59.517 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:11:59.518 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 51_epoch
+2022-05-02 16:11:59.536 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:11:59.537 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:11:59.537 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:12:08.839 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:12:08.840 | INFO     | solver:test:318 - carrier loss: 0.0009447098746022675
+2022-05-02 16:12:08.840 | INFO     | solver:test:319 - carrier SnR: 15.598313331604004
+2022-05-02 16:12:08.840 | INFO     | solver:test:320 - message loss: 0.026759425022949777
+2022-05-02 16:12:08.840 | INFO     | solver:test:321 - message SnR: 2.3755316734313965
+2022-05-02 16:12:08.844 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:12:39.066 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:12:39.067 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 52_epoch
+2022-05-02 16:12:39.085 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:12:39.085 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:12:39.085 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:12:48.134 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:12:48.134 | INFO     | solver:test:318 - carrier loss: 0.0009338312993349973
+2022-05-02 16:12:48.135 | INFO     | solver:test:319 - carrier SnR: 15.64899730682373
+2022-05-02 16:12:48.135 | INFO     | solver:test:320 - message loss: 0.026701190819342937
+2022-05-02 16:12:48.136 | INFO     | solver:test:321 - message SnR: 2.388422727584839
+2022-05-02 16:12:48.139 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:13:18.311 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:13:18.312 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 53_epoch
+2022-05-02 16:13:18.331 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:13:18.331 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:13:18.331 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:13:27.377 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:13:27.377 | INFO     | solver:test:318 - carrier loss: 0.0009251813862647396
+2022-05-02 16:13:27.377 | INFO     | solver:test:319 - carrier SnR: 15.689778327941895
+2022-05-02 16:13:27.378 | INFO     | solver:test:320 - message loss: 0.026761161784331005
+2022-05-02 16:13:27.378 | INFO     | solver:test:321 - message SnR: 2.376049041748047
+2022-05-02 16:13:27.381 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:13:57.564 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:13:57.565 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 54_epoch
+2022-05-02 16:13:57.583 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:13:57.584 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:13:57.584 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:14:06.785 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:14:06.786 | INFO     | solver:test:318 - carrier loss: 0.0009201892389683053
+2022-05-02 16:14:06.786 | INFO     | solver:test:319 - carrier SnR: 15.714302062988281
+2022-05-02 16:14:06.786 | INFO     | solver:test:320 - message loss: 0.02674127090722322
+2022-05-02 16:14:06.787 | INFO     | solver:test:321 - message SnR: 2.369147777557373
+2022-05-02 16:14:06.790 | DEBUG    | solver:train_mode:169 - train mode
+2022-05-02 16:14:36.956 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:14:36.957 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /content/msg2_c_detach_2/ckpt
+==> suffix: 55_epoch
+2022-05-02 16:14:36.975 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:14:36.975 | INFO     | solver:test:292 - Mode: validation
+2022-05-02 16:14:36.975 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:14:46.082 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:14:46.083 | INFO     | solver:test:318 - carrier loss: 0.0009287379361921921
+2022-05-02 16:14:46.083 | INFO     | solver:test:319 - carrier SnR: 15.672550201416016
+2022-05-02 16:14:46.083 | INFO     | solver:test:320 - message loss: 0.02670220859969656
+2022-05-02 16:14:46.084 | INFO     | solver:test:321 - message SnR: 2.381453514099121
+2022-05-02 16:14:46.087 | INFO     | solver:train:274 - finished training!
+2022-05-02 16:14:46.090 | DEBUG    | solver:eval_mode:173 - eval mode
+2022-05-02 16:14:46.091 | INFO     | solver:test:292 - Mode: test
+2022-05-02 16:14:46.091 | INFO     | solver:test:295 - start testing...
+2022-05-02 16:16:16.871 | INFO     | solver:test:317 - finished testing!
+2022-05-02 16:16:16.871 | INFO     | solver:test:318 - carrier loss: 0.0009587969980202615
+2022-05-02 16:16:16.871 | INFO     | solver:test:319 - carrier SnR: 16.463735580444336
+2022-05-02 16:16:16.872 | INFO     | solver:test:320 - message loss: 0.030310012555370726
+2022-05-02 16:16:16.872 | INFO     | solver:test:321 - message SnR: 2.285884380340576
+2022-05-02 16:16:16.875 | INFO     | experiment:save:163 - saving experiment
