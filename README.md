@@ -7,4 +7,8 @@ This is a Speech Steganography Project. In this a message audio(m) is hidden ins
 However, the approach we used differs from the baseline in the sense that, the Phase information in the audios are preserved. Each speech spectrogram is seperated into real and imaginary parts and concatenated together which leads to each audio having 2 channels. This can again be used to recover the audios.
 
 
+The different version are: 
 
+Hide 1 message inside carrier \n
+Hide 2 messages inside carrier \ n
+Hide 3 messages inside carrier
