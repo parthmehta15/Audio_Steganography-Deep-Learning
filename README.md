@@ -9,6 +9,7 @@ However, the approach we used differs from the baseline in the sense that, the P
 
 The different version are: 
 
-Hide 1 message inside carrier \n
-Hide 2 messages inside carrier \ n
+Hide 1 message inside carrier   
+Hide 2 messages inside carrier  
 Hide 3 messages inside carrier
+Hide 2 messages inside a carrier and a conditionl decoder to decode the message using a key
