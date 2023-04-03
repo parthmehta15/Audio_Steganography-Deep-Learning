@@ -19,11 +19,14 @@ To run the code:
 (You can change the hyperparameters accordingly)
 
 
-#Training
+**Training**  
 python main.py --num_iters 60 --mode train --train_path datasets/Train --val_path datasets/Val --test_path datasets/Test --batch_size 32 --n_pairs 3000 --n_messages 1 --dataset timit --run_dir 1_msg --save_model_every 5 --num_workers 4
 
+**Testing**. 
+python main.py --mode test --load_ckpt ckpt/60_epoch --train_path datasets/Train --val_path datasets/Val --test_path datasets/Test  --dataset timit --n_messages 1
 
-#Inference
+
+**Inference**. 
 python main.py --mode sample --run_dirsample --load_ckpt ckpt/60_epoch --train_path datasets/Train --val_path datasets/Val --test_path datasets/Test  --dataset timit --n_messages 1
 
 
