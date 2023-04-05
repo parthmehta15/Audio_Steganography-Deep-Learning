@@ -1,4 +1,4 @@
-# Hide_and_Speak_Real_Imag
+# Hide_and_Speak_Real_Imag (Audio Steganography)
 
 This is a Speech Steganography Project. In this a message audio(m) is hidden inside a carrier audio (c) using an encoder to get (c_hat) which sounds similar to the original carrier. The hidden message can be recoverd by passing c_hat through the decoder to get m_hat. The recovered message should sound like the original message.
 
